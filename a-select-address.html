@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/a-indent.css">
+    <link rel="stylesheet" href="./css/a-address.css">
+    <title>Document</title>
+</head>
+<style>
+.a-z-all {
+    background-color: #fff;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding: 20px 45px 20px 15px;
+    position: relative;
+}
+.a-user {
+    padding-bottom: 16px;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+}
+.a-address {
+    color: #999;
+    line-height: 20px;
+    font-size: 14px;
+}
+.a-z-icon {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(./image/icon.png);
+    top: 32px;
+    right: 17px;
+    background-size: 1323%;
+    background-position: -603px -29px;
+}
+</style>
+<body>
+    <div>
+        <div class="a-two-top">
+            <a href="./a-indent.html" class="a-two-return">
+                <i class="a-two-return-icon"><img src="./image/return_icon.png" alt="" class="m1"></i>
+            </a>
+            <h3 class="a-two-title">选择收货地址</h3>
+            <a href="" class="a-two-more">
+                <i class="a-two-more-icon"><img src="./image/more_icon.png" alt=""></i>
+                <span class="a-two-more-num">0</span>
+            </a>
+        </div>
+        <div class="a-z-address" style="margin-top: 46px;">
+
+
+        </div>
+
+        <div class="a-button-save">
+            <a href="./a-address.html">新增收货地址</a>
+        </div>
+    </div>
+    <script>
+        var choose = document.getElementsByClassName('a-z-all') 
+        var icon = document.getElementsByClassName('a-z-icon') 
+        var alladdress = document.getElementsByClassName("a-z-address") 
+        var mrarea = document.getElementsByClassName("a-mrarea")
+        for(var i=1;i<JSON.parse(localStorage.getItem('username')).length;i++){
+            alladdress[0].innerHTML+=`
+            <a href="./a-indent.html" class="a-mrarea">
+                <div class="a-z-all">
+                    <div class="a-user">
+                        <span class="a-username" style="float: left;">${JSON.parse(localStorage.getItem('username'))[i]}</span>
+                        <span class="a-iphone">${JSON.parse(localStorage.getItem('iphone'))[i]}</span>
+                    </div>
+                    <div class="a-address">${JSON.parse(localStorage.getItem('address'))[i]}</div>
+                    <span class="a-z-icon"></span>
+                </div>
+            </a>
+            `
+        }
+        if(localStorage.getItem("areaid")!="" && localStorage.getItem("areaid")!=null){
+            console.log(parseInt(localStorage.getItem("areaid")))
+            icon[parseInt(localStorage.getItem("areaid"))].style.backgroundPosition="-603px -59px"
+        }
+        for(var i=0;i<choose.length;i++){
+            choose[i].onclick=function(){
+                this.children[2].style.backgroundPosition="-603px -59px"
+            }
+        }
+        for(var i=0; i<mrarea.length; i++){
+            mrarea[i].index=i
+            mrarea[i].onclick=function(){
+                console.log(this.index)
+                localStorage.setItem("areaid",this.index)
+            }
+        }
+    </script>
+</body>
+</html>

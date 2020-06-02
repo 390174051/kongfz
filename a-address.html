@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/a-indent.css">
+    <link rel="stylesheet" href="./css/a-address.css">
+    <link href="./css/mui.picker.css" rel="stylesheet" />
+    <link href="./css/mui.poppicker.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="a-two-top">
+            <a href="./a-select-address.html" class="a-two-return">
+                <i class="a-two-return-icon"><img src="./image/return_icon.png" alt=""></i>
+            </a>
+            <h3 class="a-two-title">添加收货地址</h3>
+            <a href="" class="a-two-more">
+                <i class="a-two-more-icon"><img src="./image/more_icon.png" alt=""></i>
+                <span class="a-two-more-num">0</span>
+            </a>
+        </div>
+        <div class="a-three-notice">注：手机和座机至少填写一个</div>
+        <div class="a-three-arealist">
+            <div class="a-arealist1" id='showCityPicker' class="mui-btn mui-btn-block" type='button'>
+                <div class="a-arealist1-1">
+                    所在区域：
+                </div>
+                <span id="a-s-text" style="font-size: 17px;"></span>
+                <div class="a-arealist1-2">
+                    <div><img src="./image/reight_icon.png" alt=""></div>
+                </div>
+            </div>
+            <div class="a-arealist1">
+                <div class="a-arealist1-1">
+                    收货人姓名：
+                </div>
+                <input type="text" class="inp1">
+            </div>
+            <div class="a-arealist1">
+                <div class="a-arealist1-1">
+                    手机号码：
+                </div>
+                <input type="text" class="inp1">
+            </div>
+            <div class="a-arealist1">
+                <div class="a-arealist1-1">
+                    座机号码：
+                </div>
+                <input type="text">
+            </div>
+            <div class="a-arealist1">
+                <div class="a-arealist1-1">
+                    详细地址：
+                </div>
+                <input type="text">
+            </div>
+            <div class="a-arealist2">
+                <div class="a-arealist2-1">
+                    <p>邮政编码：</p>
+                    <p class="a-txt1">非必填</p>
+                </div>
+                <input type="text">
+            </div>
+            <div class="a-arealist2">
+                <div class="a-arealist2-1" style="width: 240px;">
+                    <p>设为默认地址？</p>
+                    <p class="a-txt1">设置后每次下单时会自动使用该地址</p>
+                </div>
+                <i id="a-s-icon"></i>
+            </div>
+        </div>
+        <div class="a-button-save">
+            <a href="./a-select-address.html">保存</a>
+        </div>
+    </div>
+
+    <script src="./font.js"></script>
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/mui.picker.js"></script>
+    <script src="./js/mui.poppicker.js"></script>
+    <script src="./js/city.data.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        (function($, doc) {
+            $.init();
+            $.ready(function() {
+                /**
+                 * 获取对象属性的值
+                 * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+                 * @param {Object} obj 对象
+                 * @param {String} param 属性名
+                 */
+                var _getParam = function(obj, param) {
+                    return obj[param] || '';
+                };
+                //普通示例
+                var userPicker = new $.PopPicker();
+
+                //-----------------------------------------
+                //级联示例
+                var cityPicker = new $.PopPicker({
+                    layer: 2
+                });
+                cityPicker.setData(cityData);
+                var showCityPickerButton = doc.getElementById('showCityPicker');
+                var txt = document.getElementById('a-s-text');
+                var cityResult = doc.getElementById('cityResult');
+                var inp = document.getElementsByClassName("inp1");
+                var icon = document.getElementById("a-s-icon") ;
+                var save = document.getElementsByClassName("a-button-save")[0];
+                showCityPickerButton.addEventListener('tap', function(event) {
+                    cityPicker.show(function(items) {
+                        txt.innerHTML =items[0].text + " " + items[1].text;
+                        //返回 false 可以阻止选择框的关闭
+                        //return false;
+                    });
+                }, false);
+			//级联示例
+                var num1=0
+                icon.onclick=function(){
+                    if(num1==0){
+                        this.style.backgroundPosition="-588px -30px"
+                        num1=num1+1
+                    }else {
+                        this.style.backgroundPosition="-588px -58px"
+                        num1=0
+                    }  
+                }
+                var username =new Array()
+                var iphone = new Array()
+                var address = new Array()
+                
+                    save.onclick=function(){
+                        if(inp[0].value!=="" && inp[1].value!=="" && txt.innerHTML!==""){
+                            var test1=username.concat(JSON.parse(localStorage.getItem('username')))
+                            var test2=iphone.concat(JSON.parse(localStorage.getItem('iphone')))
+                            var test3=address.concat(JSON.parse(localStorage.getItem('address')))
+                            test1.push(inp[0].value)
+                            test2.push(inp[1].value)
+                            test3.push(txt.innerHTML)
+                            localStorage.setItem("username",JSON.stringify(test1))
+                            localStorage.setItem("iphone",JSON.stringify(test2))
+                            localStorage.setItem("address",JSON.stringify(test3))
+                        }
+                    }
+
+            });
+        })(mui, document);
+        // var showCityPickerButton = doc.getElementById('showCityPicker');
+
+
+    </script>
+</body>
+</html>

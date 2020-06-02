@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/a-indent.css">
+    <title>Document</title>
+</head>
+<style>
+#a-indent {
+    margin-top: 55px;
+    overflow: hidden;
+}
+.a-indent-img{
+    width: 84px;
+    height: 84px;
+    float: left;
+    margin-right: 10px;
+}
+.a-indent-img img {
+    width: 100%;
+    height: 100%;
+}
+.a-ind-shop {
+    font-size: 16px;
+    padding: 15px 11px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+.a-ind-tem {
+    position: relative;
+    background: #fafafa;
+    padding: 11.2px 12px;
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+}
+.a-ind-book {
+    font-size: 14px;
+    margin-right: 70px;
+}
+.a-ind-price {
+    font-size: 14px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+.a-pran {
+    padding: 0 15px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+.a-remind {
+    position: relative;
+    border-top: 1px solid #eee;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #fff;
+    line-height: 18px;
+    color: #999;
+}
+.snum {
+    position: relative;
+    top: -15px;
+    left: 183px;
+    color: #999;
+}
+.a-user {
+    line-height: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.a-address {
+    text-align: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+    height: 20px;
+    line-height: 40px;
+}
+</style>
+<body>
+    <div>
+        <div class="a-two-top">
+            <a href="./a-shopping-car.html" class="a-two-return">
+                <i class="a-two-return-icon"><img src="./image/return_icon.png" alt="" class="m1"></i>
+            </a>
+            <h3 class="a-two-title">提交订单</h3>
+            <a href="" class="a-two-more">
+                <i class="a-two-more-icon"><img src="./image/more_icon.png" alt=""></i>
+                <span class="a-two-more-num">0</span>
+            </a>
+        </div>
+        <div class="a-add-area">
+            <div class="a-add-areacon">
+                <a href="./a-select-address.html" class="sharea">
+                    <!-- <i><img src="./image/add_icon.png" alt="" style="vertical-align: sub;"></i> -->
+                    <!-- <span>添加收货地址</span> -->
+                </a>
+            </div>
+        </div>
+
+        <div id="a-indent"></div>
+        <div class="a-pran">
+            <div style="overflow: hidden;">
+                <div style="float: left; line-height: 60px;">配送方式</div>
+                <div style="float: right; line-height: 60px;">快递 ￥0.00</div>
+            </div>
+            <div style="overflow: hidden;border-top: 1px solid #eee;">
+                <div style="float: left; line-height: 60px;">商品总额</div>
+                <div style="float: right; line-height: 60px; color: #d00000;"><span>￥</span><span id="a-allprice1">0</span><span>.00</span></div>
+            </div style="overflow: hidden;">
+        </div>
+
+        <div class="a-remind">
+            重要提示：基于本网所售商品的特殊性及古旧书行业的具体情况，非十品（非全新）商品为有瑕疵商品，按照国家有关规定，不支持7天无理由退货。请认真考虑是否同意并生成订单。
+        </div>
+        <div style="height: 100px;"></div>
+
+
+        <div class="a-two-bottom">
+            <div class="a-two-btn"><a href="./a-pay.html">确认生成订单</a></div>
+            <div class="a-two-order">
+                <p class="a_t5">合计:<b style="color: #d00000; font-size: 15px;">￥<span style="font-size: 20px;" id="a-allprice2">0</span>.00</b></p>
+                <p>共 <b id="a-allnum">0</b> 件商品</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./font.js"></script> -->
+    <script>
+        var m=document.getElementsByClassName("m1")[0]
+        m.onclick=function(){
+            console.log(111)
+        }
+
+
+
+        var xhr = new XMLHttpRequest();
+        var allprice1 = document.getElementById("a-allprice1")
+        var allprice2 = document.getElementById("a-allprice2")
+        var allnum = document.getElementById("a-allnum")
+        var sharea = document.getElementsByClassName("sharea")[0]
+        var nextprice=0
+        // console.log(JSON.parse(localStorage.getItem('username'))[parseInt(localStorage.getItem("areaid"))+1])
+        console.log(localStorage.getItem("areaid"))
+        if(localStorage.getItem("areaid")!=null){
+            sharea.innerHTML=`
+                <div class="a-z-all">
+                    <div class="a-user">
+                        <span class="a-username" style="float: left;">收货人：${JSON.parse(localStorage.getItem('username'))[parseInt(localStorage.getItem("areaid"))+1]}</span>
+                        <span class="a-iphone">${JSON.parse(localStorage.getItem('iphone'))[parseInt(localStorage.getItem("areaid"))+1]}</span>
+                    </div>
+                    <div class="a-address">收货地址：${JSON.parse(localStorage.getItem('address'))[parseInt(localStorage.getItem("areaid"))+1]}</div>
+                    <span class="a-z-icon"></span>
+                </div>
+            `
+        }else{
+            sharea.innerHTML=`
+                添加收货地址
+            `
+        }
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState===4 && xhr.status ===200){
+                var sqlarr=JSON.parse(localStorage.getItem('sure'))
+                var surenum=JSON.parse(localStorage.getItem('snum'))
+                console.log(surenum)
+                var articles = JSON.parse(xhr.responseText);
+                for(var i=0;i<sqlarr.length;i++){
+                    var indent = document.getElementById("a-indent")
+                    console.log(articles[sqlarr[i]].book_name)
+                    indent.innerHTML+=`
+                    <div style="overflow: hidden;">
+                        <div class="a-ind-shop">${articles[sqlarr[i]-1].book_Shop}</div>
+                        <div class="a-ind-tem">
+                            <div class="a-indent-img"><img src="${articles[sqlarr[i]-1].swiper_img1}" /></div>
+                            <div class="a-ind-book">${articles[sqlarr[i]-1].book_name}</div>
+                            <p class="a-ind-price">${articles[sqlarr[i]-1].book_price}</p>
+                            <span class="snum">x${surenum[i]}</span>
+                        </div>
+                    </div>    
+                    `,
+                    console.log(articles[sqlarr[i]].book_price)
+                    allprice1.innerHTML=parseInt(allprice1.innerHTML)+(parseInt(articles[sqlarr[i]-1].book_price)*surenum[i])
+                    allprice2.innerHTML=parseInt(allprice2.innerHTML)+(parseInt(articles[sqlarr[i]-1].book_price)*surenum[i])
+                    allnum.innerHTML=parseInt(allnum.innerHTML)+surenum[i]
+                }
+            }
+            nextprice=allprice1.innerHTML
+            localStorage.setItem("allprice",nextprice)
+        }
+        xhr.open('GET','http://localhost/kongfz/a-connect.php', true);
+        xhr.send();
+    </script>
+</body>
+</html>

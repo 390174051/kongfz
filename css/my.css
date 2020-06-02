@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 50px;
+}
+body {
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.b-title {
+    width: 100%;
+    height: .88rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    line-height: .56rem;
+    padding: .16rem .2rem .16rem .16rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: .34rem;
+    color: #262626;
+    font-weight: 700;
+    background: #fff;
+}
+/* 轮播 */
+.b-swiper {
+    width: 100%;
+    height: 3.2rem;
+    margin-top: .88rem;
+}
+/* 导航 */
+.b-nav {
+    width: 6.9rem;
+    margin: 0 auto;
+    padding-top: .28rem;
+    padding-bottom: .56rem;
+}
+.b-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.b-nav ul li {
+    width: 1.36rem;
+    height: 1.26rem;
+    font-size: .22rem;
+    color: #666;
+    text-align: center;
+    margin-top: .28rem;
+}
+.b-imgBox {
+    width: .88rem;
+    height: .88rem;
+    margin: 0 auto;
+    margin-bottom: .08rem;
+}
+.b-imgBox img {
+    width: .88rem;
+    height: .88rem;
+}
+.b-name {
+    height: .3rem;
+    line-height: .3rem;
+    color: #666;
+}
+.b-line {
+    height: .16rem;
+    background: #f3f3f3;
+}
+/* 名家专区 */
+.b-area {
+    width: 100%;
+    padding: .5rem .3rem .3rem;
+    box-sizing: border-box;
+    font-size: .38rem;
+    color: #262626;
+    font-weight: bold;
+}
+.b-inner {
+    width: 6.9rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.b-author-intro {
+    padding-top: .24rem;
+    padding-left: .2rem;
+}
+.b-author-intro p:first-child {
+    font-size: .3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .08rem;
+}
+.b-author-intro p:last-child {
+    width: 1.8rem;
+    height: .36rem;
+    font-size: .24rem;
+    color: #999;
+    overflow: hidden;
+}
+.b-box {
+    width: 3.42rem;
+    height: 1.32rem;
+    background: #fafafa;
+    border-radius: .08rem;
+    margin-bottom: .06rem;
+}
+.b-author-img1 {
+    float: right;
+    width: 1.04rem;
+    height: 1.04rem;
+    text-align: center;
+    line-height: 1.04rem;
+    margin: .14rem .2rem 0 0;
+    border-radius: .08rem;
+}
+.b-author-img1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.b-moduleTwo {
+    width: 100%;
+    margin-bottom: .06rem;
+}
+/* mui 轮播 */
+.b-swiper-list {
+    width: 6.9rem;
+    margin: 0 auto;
+    line-height: .42rem;
+}
+.b-swiper-list span {
+    margin-right: .3rem;
+    font-size: .3rem;  
+    color: #999; 
+}
+.red {
+    color: #9e100e !important;
+}
+/* 特色推荐 */
+.b-feature {
+    width: 100%;
+    overflow: hidden;
+}
+.b-container {
+    width: 6.9rem;
+    margin: 0 auto;
+    display: none;
+}
+.b-container ul {
+    width: 100%;
+    height: 7.94rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.b-container ul li {
+    width: 2.1rem;
+    height: 3.62rem;
+    margin: .3rem 0 .1rem;
+}
+.b-bookImg {
+    width: 2.1rem;
+    height: 2.1rem;
+    text-align: center;
+    line-height: 2.1rem;
+    border-radius: .08rem;
+    overflow: hidden;
+}
+.b-bookImg img {
+    width: 100%;
+    height: 100%;
+}
+.b-bookTitle {
+    width: 100%;
+    height: .8rem;
+    font-size: .26rem;
+    color: #262626;
+    text-align: justify;
+    line-height: .4rem;
+    overflow: hidden;
+    margin-top: .16rem;
+}
+.b-bookPrice {
+    font-size: .3rem;
+    width: 100%;
+    height: .42rem;
+    line-height: .42rem;
+    color: #9e100e;
+    margin-top: .04rem;
+}
+.b-more {
+    width: 100%;
+    font-size: .26rem;
+    padding-top: .4rem;
+    text-align: center;
+}
+/* 书单推荐 */
+.b-intro-list {
+    width: 100%;
+}
+.mui-slider-title {
+    bottom: -30px;
+    background-color: #fff;
+}
+/* 书店推荐 */
+.b-story-list {
+    width: 7.1rem;
+    margin: 0 auto;
+    display: none;
+}
+.b-story-list ul {
+    padding-top: .3rem;
+}
+.b-story-list ul li {
+    height: 5.1rem;
+    background: #fafafa;
+    border-radius: .16rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+}
+.b-story-tit {
+    width: 6.7rem;
+    height: .88rem;
+    margin: 0 auto;
+    margin-top: .36rem;
+}
+.b-story-img {
+    float: left;
+    width: .88rem;
+    height: .88rem;
+    text-align: center;
+    line-height: .88rem;
+    border-radius: .08rem;
+    overflow: hidden;
+}
+.b-story-img img {
+    width: 100%;
+    height: 100%;
+}
+.b-story-txt {
+    float: left;
+    margin-left: .2rem;
+}
+.b-story-name {
+    height: .42rem;
+    font-size: .3rem;
+    line-height: .42rem;
+    color: #262626;
+    margin: .02rem 0 .1rem;
+}
+.b-story-info {
+    font-size: .22rem;
+    color: #999;
+}
+.b-list {
+    width: 6.7rem;
+    margin: 0 auto;
+    padding-top: .36rem;
+    display: flex;
+    justify-content: space-between;
+}
+.b-list li {
+    width: 2.1rem;
+}
+.b-recommend {
+    margin-top: .4rem;
+}
+/* 为您推荐 */
+.b-recommend-list {
+    width: 100%;
+    background: linear-gradient(#fff,#f8f8f8 5.42rem,#f8f8f8);
+}
+.b-recommend-list ul {
+    width: 7.1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.b-recommend-list ul li {
+    width: 3.46rem;
+    height: 5.42rem;
+    background: #fff;
+    border-radius: .08rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+}
+.b-reco-imgBox {
+    width: 3.46rem;
+    height: 3.46rem;
+    text-align: center;
+}
+.b-reco-imgBox img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.b-reco-title {
+    width: 3.06rem;
+    height: .8rem;
+    line-height: .4rem;
+    font-size: .26rem;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: .14rem;
+    color: #333;
+}
+.b-reco-midBox {
+    width: 3.06rem;
+    height: .36rem;
+    line-height: .36rem;
+    margin: 0 auto;
+    margin-top: .04rem;
+}
+.b-phase {
+    float: left;
+    padding: 0 .1rem;
+    height: .36rem;
+    font-size: .22rem;
+    color: #999;
+    background: #fafafa;
+    border-radius: .08rem;
+}
+.b-address {
+    float: right;
+    font-size: .22rem;
+    color: #999;
+}
+.b-reco-price {
+    width: 3.06rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: #9e100e;
+    margin-top: .06rem;
+}
+.b-reco-price span:first-child {
+    font-size: .24rem;
+}
+.b-reco-price span:nth-child(2) {
+    font-size: .3rem;
+}
+.b-noMore {
+    text-align: center;
+    line-height: .3rem;
+    padding: .4rem 0;
+    font-size: .26rem;
+    color: #c2c2c2;
+    margin-bottom: 1rem;
+    background: #f8f8f8;
+}
+/* 作者作品简介 */
+.b-au-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: .47rem;
+    padding: 0 .15rem;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    background: #fff;
+    width: 100vw;
+    border-bottom: 1px solid #eaeaea;
+    box-sizing: border-box;
+    max-width: 750px;
+}
+.b-return {
+    width: .2rem;
+    height: .2rem;
+}
+.b-au-nav span {
+    font-size: .17rem;
+    color: #262626;
+}
+.b-rot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: .37rem;
+    height: .4rem;
+    justify-content: center;
+}
+.b-rot img {
+    width: .2rem;
+}
+.b-au-img {
+    margin: .47rem 0 .05rem;
+}
+.b-au-img img {
+    width: 100%;
+}
+.b-book-list li {
+    background: #fff;
+    display: flex;
+    padding: 0 .12rem;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.b-total-cover {
+    display: flex;
+}
+.b-left {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .05rem 0;
+}
+.b-left img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.b-right {
+    width: 1.9rem;
+    padding: .1rem 0 .1rem .1rem;
+}
+.b-item1 {
+    font-size: .14rem;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 1.86rem;
+    margin-top: .03rem;
+}
+.b-item2 {
+    font-size: .12rem;
+    color: #999;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    margin-top: .09rem;
+    max-height: .36rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.b-item3 {
+    margin-top: .09rem;
+    color: #ba7e48;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;
+    font-size: .12rem;
+}
+.b-end {
+    justify-content: center;
+    flex-direction: row;
+    margin-top: .15rem;
+    margin-bottom: .25rem;
+    width: 100vw;
+    max-width: 750px;
+    display: flex;
+    align-items: center;
+}
+.b-end-line {
+    border-bottom: 1px solid #d6d6d6;
+    width: .25rem;
+}
+.b-no-more {
+    font-size: .12rem;
+    color: #bdbdbd;
+    margin: 0 .1rem;
+}
+.b-return-top {
+    width: .92rem;
+    height: .92rem;
+    position: fixed;
+    bottom: 1.6rem;
+    right: .38rem;
+    z-index: 200;
+}
+.b-footer {
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1rem;
+    border-top: 1px solid #eaeaea;
+    z-index: 10;
+    background: #fff;
+}
+.b-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 1rem;
+}
+.b-footer ul li {
+    flex: 0.25;
+    text-align: center;
+}
+.b-foot-img {
+    width: .5rem;
+    height: .5rem;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+}
+.b-foot-img img {
+    width: 100%;
+}
+.b-foot-txt {
+    line-height: .36rem;
+    font-size: .22rem;
+    color: #262626;
+}

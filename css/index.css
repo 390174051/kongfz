@@ -1,0 +1,518 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    box-sizing:border-box;   
+}
+ul {
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+}
+/* 顶部搜索框 */
+.h-box {
+    margin: auto;
+    width: 100%;                                                                              
+    max-width: 1024px;
+    min-width: 320px; 
+}
+.h-title { 
+    display: flex;
+    height: 1.2rem;
+    line-height: .6rem;
+    width: 100%;
+    padding: .24rem .3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.h-logo {
+    width: 10%;
+    margin-right: .2rem;
+}
+.h-logo img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.h-ipt {
+    position: relative;
+    width: 100%;
+}
+.h-ipt input {
+    position: absolute;
+    width: 100%;  
+    top: .08rem;
+    height: .68rem;
+    border-radius: .68rem; 
+    border: none;
+    background-color: #f5f5f5;
+    outline: medium;
+}
+.h-ipt input::placeholder {
+    padding-left: .8rem; 
+    font-size: .2rem;
+} 
+.h-search {
+    position: absolute;
+    top: .25rem;
+    width: .3rem;
+    height: .3rem;
+    margin: 0 .16rem 0 .3rem; 
+} 
+/* 轮播图 */
+.mui-slider-indicator .mui-active.mui-indicator  {
+    width: .3rem; 
+    border-radius: .25rem;
+}
+.mui-slider-indicator .mui-indicator {
+    width: 3px;
+    height: 3px;
+    margin: 1px 2px;
+}
+/* 分类 */ 
+.h-series {
+    width: 100%; 
+    padding: .28rem .3rem .56rem;
+    background-color: #fff;
+}
+.h-series ul {
+    display: flex;
+    width: 100%;
+}
+.h-series li { 
+    width: 20%;
+    height: 1.26rem;
+    font-size: .22rem; 
+    text-align: center;
+    margin-top: .28rem;
+    list-style: none;
+}
+.h-series a {
+    color: #666;
+}
+.h-imgBox {
+    width: .88rem; 
+    height: .88rem;
+    margin: 0 auto .08rem; 
+}
+.h-imgBox img {
+    width: .88rem; 
+    height: .88rem; 
+}
+/* 今日上新 */
+.h-new {
+    width: 100%;
+    padding-bottom: .4rem;
+    background-color: #fff;
+}
+.h-top {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.h-left {
+    float: left;
+    width: 50%;
+    height: 1.32rem;
+    background: #fafafa;
+    border-radius: .08rem;
+    margin-bottom: .06rem;
+    overflow: hidden;
+}
+.h-tit {
+    float: left;
+    margin-top: .24rem;
+    margin-left: .2rem;
+}
+.h-tit h4 {
+    width: 1.8rem;
+    height: .42rem;
+    line-height: .42rem;
+    font-size: .3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .08rem; 
+}
+.h-tit p {
+    width: 1.8rem;
+    height: .33rem;
+    line-height: .33rem;
+    font-size: .24rem;
+    color: #999; 
+}
+.h-img {
+    float: right;
+    width: 1.04rem;
+    height: 1.04rem;
+    text-align: center;
+    line-height: 1.04rem;
+    margin-top: .14rem;
+    margin-right: .2rem;
+    border-radius: .08rem;
+    font-size: 0;
+}
+.h-img img {
+    width: 100%;
+}
+/* 好书推荐 */
+.h-book {
+    padding-bottom: .4rem;
+}
+.h-good {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: .16rem;
+}
+.h-goodTit {
+    line-height: .54rem;
+    padding: .5rem .3rem 0;
+    font-size: .38rem;
+    margin-bottom: .3rem;
+    color: #262626;
+    overflow: hidden;
+}
+.h-goodTit h4 {
+    float: left !important;
+    font-size: .38rem;
+    width: 5.8rem;
+    height: 0.54rem;
+    overflow: hidden;
+}
+.h-goodTit span { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    float: right;
+    font-size: .26rem;
+    color: #365899;
+}
+.swiper-container {
+    width: 90%;  
+    margin: auto; 
+}
+.swiper-slide { 
+    margin-right: 10px !important;
+    font-size: 18px;
+    background: #fff;
+    width: 2.3rem;     
+}  
+.h-bookgimg {
+    width: 100%;
+    height: 2.8rem;
+    text-align: center;
+    line-height: 2.8rem;
+    font-size: 0;
+}
+.h-bookgimg img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.h-bookname {
+    width: 2rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .26rem;
+    color: #262626;
+    overflow: hidden;
+    margin-top: .16rem;
+}
+.h-bookauthor {
+    width: 2rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .22rem;
+    color: #999;
+    overflow: hidden;
+    margin-top: .08rem;
+}
+p {
+    margin-bottom: 0 !important;
+}
+.h-bookprice {
+    height: .42rem;
+    line-height: .42rem;
+    margin-top: .07rem;
+    font-size: .22rem;
+    color: #999;
+}
+.h-bookprice span {
+    font-size: .3rem;
+    color: #9e100e;
+    margin-right: .04rem;
+}
+/* 列表 */
+.h-listItem li{
+    width: 100%;
+    overflow: hidden;
+}
+.h-listimg {
+    float: left;
+    position: relative;
+    width: 34%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-size: 0;
+    margin-right: 15px;
+}
+.h-listimg img {
+    width: 100%;
+}
+.h-listprice {
+    position: absolute;
+    left: 0;
+    bottom: .45rem; 
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    background: rgba(158,16,14,.8);
+    color: #fff;
+    padding: 0 .14rem 0 .04rem;
+    border-radius: 0 .7rem .7rem 0;
+}
+.h-listprice span {
+    font-size: .3rem;
+}
+.h-listtitle {
+    float: left;
+    width: 60%;
+    height: 3rem;
+    border-bottom: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+.h-listtitle p{ 
+    height: .42rem;
+    line-height: .42rem;
+    font-size: .3rem;
+    font-weight: 700;
+    color: #262626;
+    margin-top: .2rem;
+    overflow: hidden; 
+}
+/* 为你推荐 */
+.h-list1 {
+    background-color: #f8f8f8;
+}
+.h-recommend {
+    margin-top: .2rem;
+}
+.h-recommend h4 {
+    line-height: .54rem;
+    padding: .5rem .3rem .3rem;
+    font-size: .38rem;
+    color: #262626;
+    margin: 0 !important;
+    background-color: #fff;
+}
+#h-item {
+    width: 92%;
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center;  
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+#h-item li {
+    float: left;
+    width: 48%;
+    height: 5.42rem;
+    background: #fff;
+    border-radius: .08rem;
+    margin-bottom: .2rem;
+    overflow: hidden; 
+}
+.h-img-box {
+    width: 3.46rem;
+    height: 3.46rem;
+    margin: auto;
+    line-height: 3.46rem;
+    font-size: 0;
+}
+.h-img-box img {
+    width: 100%;
+    max-height: 100%;
+}
+.h-img-tit {
+    width: 3.06rem;
+    height: .8rem;
+    line-height: .4rem;
+    color: #333;
+    font-size: .26rem;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: .14rem;
+}
+.h-middle-box {
+    width: 3.06rem;
+    height: .36rem;
+    line-height: .36rem;
+    margin: 0 auto;
+    margin-top: .04rem;
+    overflow: hidden;
+}
+.h-boxquality {
+    float: left;
+    padding: 0 .1rem;
+    height: .36rem;
+    font-size: .22rem;
+    color: #999;
+    background: #fafafa;
+    border-radius: .08rem;
+}
+.h-boxarea {
+    float: right;
+    font-size: .22rem;
+    color: #999;
+}
+.h-listprice1 {
+    width: 3.06rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: #9e100e;
+    margin-top: .06rem;
+}
+/* 没有更多 */
+.h-nomore {
+    width: 100%;
+    margin-bottom: 1.1rem;
+}
+.h-inner {
+    text-align: center;
+    line-height: .3rem;
+    padding: .4rem 0;
+    font-size: .26rem;
+    color: #c2c2c2;
+}
+/* 艺术品拍卖 */
+.h-series1 {
+    width: 100%;
+    padding-bottom: .1rem;
+}
+.h-series1 ul {
+    width: 90%;
+    margin: 0 auto; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.h-series1 li {
+    display: inline-block;
+    height: .64rem;
+    line-height: .62rem;
+    border: 1px solid rgba(0, 0 , 0 ,.2);
+    border-radius: .64rem;
+    font-size: .28rem;
+    color: #262626;
+    padding: 0 .3rem;
+    margin: 0 .2rem .2rem 0; 
+}
+/* 换一换 */
+.h-changebox {
+    width: 100%;
+    font-size: .26rem;
+    color: #365899;
+    padding-bottom: .4rem;
+}
+.h-change {
+    display: flex;
+    justify-content: center;
+    height: .4rem;
+    line-height: .4rem;
+}
+.h-change img {
+    width: .4rem;
+    height: .4rem;
+}
+/* 底部 */ 
+.h-bottom {
+    position: fixed;
+    width: 100%; 
+    max-width: 1024px;
+    bottom: 0;
+    height: 1rem; 
+    border-top: 1px solid #eaeaea;
+    z-index: 10;
+    background: #fff;
+}
+.h-bottom ul {
+    width: 100%;
+}
+.h-bottom li {
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding-top: .15rem;
+}
+.h-bottom a {
+    line-height: .36rem;
+    font-size: .3rem;
+    color: #262626;
+}
+#h-active {
+    color: #9e100e !important;
+}
+.h-squera {
+    font-size: 12px !important;
+}
+/* 查看全部 */
+.h-slidemore {
+    width: 1.44rem;
+    height: .84rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    color: #262626;
+    text-align: center;
+}
+#h-all { 
+    width: 2.5rem !important; 
+    box-sizing: border-box;
+    padding: 1.8rem 0.5rem;
+    background-color: #fafafa;
+}
+/* 艺术品专场 */
+#swiper-slide {
+    width: 7rem !important;
+}
+.h-booktitle {
+    width: 89%;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    color: #333;
+    margin-bottom: .3rem;
+    overflow: hidden;
+}
+#swiper-slide img {
+    margin-right: .2rem;
+}
+/* 下载App */
+.h-app {
+    position: fixed;
+    bottom: 2.2rem;
+    width: .98rem;
+    right: .2rem;
+    height: 1.28rem;
+    z-index: 100;
+    background: url(../img/h-download.png) no-repeat;
+    background-size: 100%;
+}
+/* 返回顶部 */
+.h-returntop {
+    display: none;
+    width: .92rem;
+    height: .92rem;
+    position: fixed;
+    bottom: 1.2rem;
+    right: .2rem;
+    z-index: 99;
+    background: url(../img/h-returntop.png) no-repeat;
+    background-size: 100%;
+}

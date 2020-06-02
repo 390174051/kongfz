@@ -1,0 +1,391 @@
+
+body{
+	max-width: 750px;
+	margin: auto !important;
+	height: 100%;
+}
+.e-all,.e-forgetPage ,.e-signPage, .e-codePage{
+	max-width: 750px;
+	margin: auto !important;
+	height: 100%;
+}
+/*登录页面*/
+.e-all{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.e-top{
+    height: 1rem;
+    line-height: .8rem;
+    padding: .15rem .2rem;
+}
+.e-top img{
+    vertical-align: middle;
+    width: .45rem;
+}
+.e-top span{
+    display: inline-block;
+    text-align: center;
+    color: #262626;
+    font-size: .35rem;
+}
+.e-form{
+    padding: .4rem 0 0 !important;
+    width: 84%;
+    margin: auto;
+}
+.e-form .e-inputs{
+	border: none;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: .35rem;
+    text-indent: 10px;
+    color: #666;
+    padding: .5rem 0;
+}
+.e-form input::-webkit-input-placeholder{
+	color:#C7C7C7;
+	font-size:.32rem ;
+}
+.e-forget{
+	overflow: hidden;
+	margin-top: .15rem;
+}
+.e-forgets{
+	float: right;
+	color: #999;
+	font-size: .15rem;
+}
+.e-login,.e-verify{
+	width: 100%;
+}
+.e-login{
+	height:.9rem;
+    background: #C7C7C7;
+    font-size: .35rem;
+    color: #fff;
+}
+.e-verify{
+	margin:.35rem auto 0;
+	padding: 0 .55rem;
+	overflow: hidden;
+}
+.e-verify a{
+	color: #666;
+	font-size: .15rem;
+}
+.e-verifyLeft{
+	float: left;
+}
+.e-verifyRight{
+	float:right;
+}
+.e-loginBottom{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding-top: 2rem;
+    background: #fff;
+}
+.e-account{
+	width: 84%;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 0.26rem;
+    color: #999999;
+    line-height: .3rem;
+}
+.e-accountLine{
+	display: inline-block;
+    width: 2rem;
+    border-bottom: 1px solid #EAEAEA;
+    margin-top: .12rem;
+}
+.e-leftLine{
+	float: left;
+}
+.e-rightLine{
+	float: right;
+}
+.e-accounttxt{
+	display: inline-block;
+}
+.e-other{
+	text-align: center;
+}
+.e-other a{
+	display: inline-block;
+	width: 1.3rem;
+	height: 2rem;
+	line-height: 1.6rem;
+}
+.e-other img{
+	width: .75rem;
+	vertical-align: middle;
+}
+/*忘记密码页面*/
+.e-forgetPage{
+	background: #fff;
+	width: 100%;
+	max-width: 750px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.e-forgetTop .mui-icon-back{
+	font-size:.5rem;
+	height: 1.2rem;
+    line-height: 1.2rem;
+}
+.e-forgetTop{
+	position: relative;
+	height: 1.2rem;
+    line-height: 1.2rem;
+}
+.e-forgetTop p{
+	position: absolute;
+    left: .5rem;
+    right: .5rem;
+    top: 0;
+    text-align: center;
+    font-size: .4rem;
+    color: #333;
+}
+.e-forgetTop .e-mores{
+    display: block;
+    position: absolute;
+	height: .7rem;
+    width: .7rem;
+    right: .3rem;
+    top: .1rem;
+}
+.e-forgetTop span{
+	color:#555;
+}
+.e-forgetTop i{
+	color: #000;
+	font-size: .3rem;
+}
+.e-logonSteep{
+	width: 100%;
+	background: #f8f8f8;
+	padding: .35rem .35rem;
+	box-sizing: border-box;
+}
+.e-steepOne, .e-steepTwo, .e-steepthree{
+	width: 30%;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+}
+.e-steepBorder{
+	width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    color: #F08714;
+    border-top: 1px solid #DDD;
+}
+.e-border{
+	border-top: 1px dashed #f08714
+}
+.e-steepNum{
+	width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: #f08714;
+    color: #fff;
+    text-align: center;
+	margin: 0 auto .1rem;
+	font-size: .2rem;
+	line-height: .5rem;
+}
+.e-logonSteep p{
+	text-align: center;
+}
+.e-find{
+	padding: 0 0.3rem;
+}
+.e-methods{
+	font-size: .35rem;
+    line-height: 1rem;
+    height: 1rem;
+    margin-bottom: 0;
+}
+.e-selectBtn{
+	margin-bottom: .3rem;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+}
+#e-methods{
+    border-bottom: 1px solid #EEE;
+}
+.e-selectBtn{
+	width: 32%;
+}
+.e-selectBtn span{
+	position: relative;
+	display: inline-block;
+	border: 1px solid #d00000;
+	width: 84%;
+    height: .85rem;
+    line-height: .85rem;
+    font-size: .25rem;
+    text-align: center;
+}
+.e-selectBtn i{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: 0.5rem 2.5rem;
+}
+.e-selectBtn .e-active{
+	background-position: -95px -30px;
+}
+.e-selectIcon{
+	background: url(https://m.kongfz.com/module/login/common/images/auth/icon_login.png);
+	background-size: 320px 78px;
+}
+.e-formList, .e-listCode{
+	line-height: 1.3rem;
+    height: 1.3rem;
+    border-bottom: 1px solid #EEE;
+}
+.e-phone{
+	display: inline-block;
+	width: 1.2rem;
+	line-height: 1.3rem;
+    height: 1.3rem;
+}
+.e-formList input{
+	width: 75%!important;
+	border: none !important;
+	display: none;
+}
+.e-formList .e-show{
+	display: inline-block;
+}
+.e-listCode input{
+	width: 2rem;
+	border: none;
+}
+.e-listCode img{
+	vertical-align: middle;
+}
+.e-submit{
+    margin-bottom: 3.5rem;
+    background: #f8f8f8;
+}
+.e-submit a{
+	display: block;
+    height: .85rem;
+    line-height: .85rem;
+    margin: .3rem .15rem;
+    background: #d00000;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: .35rem;
+}
+/*注册页面*/
+.e-signPage, .e-codePage{
+	background: #fff;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.e-signTop span{
+    display: inline-block;
+    text-align: center;
+	color: #262626;
+	font-size: .36rem;
+}
+.e-signTop{
+	height: 1.1rem;
+	line-height: 1.1rem;
+	color: #262626
+}
+.e-signTop i{
+	color: #666;
+	font-size: .4rem;
+}
+.e-signForm{
+	padding: .5rem 0 0 !important;
+}
+.e-signForm .mui-input-row,.e-signbtn{
+	width: 84%;
+    margin: 0 auto;
+}
+.e-signbutton{
+	width: 100%;
+	height: .94rem;
+	background: #c7c7c7;
+	color: #fff;
+	font-size: .34rem;
+}
+.e-signForm .mui-input-row {
+    border-bottom: 1px solid #EAEAEA;
+}
+.e-signPhone div{
+    position: absolute;
+    left: 4%;
+    top: 13%;
+    height: .75rem;
+    line-height: .75rem;
+}
+.e-signForm div input{
+	margin-bottom: 0;
+	border: none;
+	height: 1rem;
+}
+.e-signPhone #signPhone{
+	padding: .3rem 1.1rem;
+	
+}
+.e-signbtn input[type=submit]{
+	background: #C7C7C7;
+	border-color:#C7C7C7 ;
+	width: 100%;
+	height: .95rem;
+    font-size: .32rem;
+    color: #fff;
+}
+.e-signbtn,.e-tip{
+	margin-top: .35rem;
+}
+.e-tip{
+	text-align: center;
+	color: #999;
+	font-size: .15rem;
+}
+.e-tip a{
+	color: #d13333!important;
+}
+.e-getcode{
+	position: absolute;
+    right: 0;
+    top: 10px;
+}
+.e-getcode span{
+	display: block;
+	width: 1.3rem;
+	height: .6rem;
+	color: #C7C7C7;
+	font-size: .15rem;
+	line-height: .6rem;
+	text-align: center;
+	border: 1px solid #C7C7C7;
+	border-radius: 5px;
+}
+/* .e-phonetip{
+	display: none;
+} */

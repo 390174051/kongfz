@@ -1,0 +1,818 @@
+body {
+	max-width: 750px;
+	margin: auto;
+}
+.f-details {
+	max-width: 7.5rem;
+	width: 100%;
+	background-color: #f2f3f7;
+	margin: auto;
+}
+.f-top{
+	width: 100%;
+}
+.f-nav {
+    margin: 0 auto;
+    position: relative;
+    max-width: 7.5rem;
+    margin: 0 auto;
+}
+.f-carousel {
+	width: 74%;
+}
+.f-lbimg {
+	width: 100%;
+}
+.f-back {
+	color: #fff;
+    background-color: #999;
+    width: .56rem;
+    height: .56rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    margin: 10px  .2rem;
+}
+.f-back span {
+	line-height: .57rem;
+	font-size: .45rem;
+}
+.f-unfold {
+	color: #FFF;
+	background-color: #999;
+	border-radius: 50%;
+	width: .56rem;
+    height: .56rem;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: .2rem;
+}
+.f-unfold img {
+	padding: 0 0.02rem;
+	width: 100%;
+	height: 100%;
+}
+.f-shoping {
+	width: .56rem;
+    height: .56rem;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 1rem;
+    background-color: #555;
+    border-radius: 50%;
+}
+.f-shoping img {
+	padding: 2px 0 0 .05rem;
+	width: 90%;
+	height: 90%;
+}
+.f-content {
+	background-color: #fff;
+	margin: auto;
+}
+.f-title h1{
+	font-size: .32rem;
+    font-weight: 600;
+    word-wrap: break-word;
+    letter-spacing: 0;
+    line-height: .48rem;
+}
+.f-title {
+	overflow: hidden;
+    margin: .24rem auto 0;
+    padding: 0 .3rem;
+    color: #262626;
+    width: 100%;
+}
+.f-messge  {
+	overflow: hidden;
+    width: 6.9rem;
+    margin-top: .1rem;
+    margin-left: .28rem;
+    line-height: .52rem;
+}
+.f-price {
+	overflow: hidden;
+    width: 6.9rem;
+    margin-top: .16rem;
+    line-height: .62rem;
+}
+.f-money {
+	float: left;
+    font-size: .44rem;
+    color: #9e100e;
+    margin-left: -3px;
+    letter-spacing: 1.4px;
+}
+.f-area {
+	float: right;
+    height: .62rem;
+    line-height: .77rem;
+    font-size: .24rem;
+    color: #999;
+    letter-spacing: 0;
+}
+.f-cover {
+	float: left;
+    padding: .02rem .18rem 0;
+    height: .52rem;
+    line-height: .5rem;
+    font-size: 0;
+    letter-spacing: 0;
+    text-align: center;
+    color: #666;
+    background: #f7f7f7;
+    border-radius: .08rem;
+}
+.f-cover-txt {
+	font-size: .24rem;
+}
+.f-num {
+    float: right;
+    letter-spacing: 0;
+    height: .6rem;
+    font-size: .24rem;
+    line-height: .6rem;
+    color: #999;
+}
+.f-author {
+	float: left;
+    width: 1.39rem;
+    text-align: left;
+    color: #c7c7c7;
+}
+.f-notes {
+	overflow: hidden;
+    position: relative;
+    width: 6.9rem;
+    padding-bottom: .2rem;
+    margin-top: .3rem;
+    margin-left: .28rem;
+}
+.f-notelist {
+	overflow: hidden;
+    border-top: 1px solid #f3f3f3;
+    padding-top: .2rem;
+}
+.f-name {
+	float: left;
+    width: 5.3rem;
+    text-align: left;
+    color: #262626;
+}
+.f-delivery {
+	width: 100%;
+    padding-left: .3rem;
+    margin: .2rem auto 0;
+    background: #fff;
+}
+.f-delivery p {
+	position: relative;
+    width: 100%;
+    height: .9rem;
+    line-height: .9rem;
+}
+.f-site-a {
+	float: left;
+    width: .77rem;
+    font-size: .26rem;
+    color: #999;
+    letter-spacing: 0;
+}
+.f-site-b {
+	float: left;
+    width: 5.65rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .26rem;
+    color: #262626;
+    letter-spacing: 0;
+}
+.f-right-icon {
+	float: right;
+    margin-top: .15rem;
+    margin-right: .3rem;
+    width: .3rem;
+    font-size: .4rem;
+    height: .3rem;
+}
+.f-join {
+	line-height: .6rem;
+    margin-right: .15rem;
+    margin-left: .2rem;
+}
+.f-comment {
+	width: 100%;
+    padding: 0 .3rem .3rem;
+    margin: .2rem auto 0;
+    position: relative;
+    background: #fff;
+    display: block;
+    line-height: 1.25em;
+}
+.f-filter {
+	overflow: hidden;
+    font-size: .26rem;
+    height: .9rem;
+    line-height: .9rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.f-filter a {
+	color: inherit;
+    text-decoration: none
+}
+.f-comment-count {
+	float: left;
+    color: #999;
+}
+.f-btn {
+	float: right;
+    color: #9e100e;
+}
+.f-comment-list {
+	width: 6.9rem;
+    margin-top: 0;
+    margin-left: -.62rem;
+    list-style: none;
+}
+.f-comment-list li {
+	line-height: 1.25em;
+	color: #333;
+}
+.f-onself {
+	height: .9rem;
+    line-height: .9rem;
+    margin-top: .12rem;
+    font-size: .26rem;
+    color: #999;
+}
+.f-onself-img {
+	float: left;
+    overflow: hidden;
+    margin-top: .15rem;
+    margin-right: .15rem;
+    width: .6rem;
+    height: .6rem;
+    line-height: .53;
+    text-align: center;
+    border-radius: 50%;
+}
+.f-onself-img img {
+	width: 100%;
+	height: auto;
+}
+.f-onself-name {
+	height: .9rem;
+    line-height: .9rem;
+    margin-top: .12rem;
+    font-size: .26rem;
+    color: #999;
+}
+.f-comment-txt {
+	font-size: .26rem;
+    line-height: .4rem;
+    color: #333;
+}
+.f-bookshop{
+	position: relative;
+    background-color: #fff;
+}
+.f-shoptop {
+	width: 6.9rem;
+    margin-top: .2rem;
+    margin-left: .28rem
+}
+.f-module {
+    overflow: hidden;
+    padding-top: .4rem;
+}
+.f-shop-logo {
+	float: left;
+    overflow: hidden;
+    width: .79rem;
+    height: .79rem;
+    line-height: .79rem;
+    text-align: center;
+    border-radius: .08rem;
+}
+.f-shop-logo img {
+	width: 100%;
+	height: 100%;
+}
+.f-shop-sign {
+	float: left;
+    width: 2.97rem;
+    margin-left: .25rem;
+}
+.f-shop-title {
+	overflow: hidden;
+    font-size: .3rem;
+    height: .375rem;
+    line-height: .375rem;
+    color: #262626;
+    font-weight: 600;
+    letter-spacing: 0;
+    word-break: break-all;
+}
+.f-shop-link {
+	width: 1.2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .24rem;
+    border: 1px solid #9e100e;
+    color: #9e100e;
+    border-radius: .08rem;
+    float: right;
+}
+.f-shop-collect {
+	width: 1.2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .24rem;
+    float: right;
+    margin-right: .34rem;
+    border: 1px solid #c7c7c7;
+    border-radius: .08rem;
+    color: #666;
+}
+.f-shop-info {
+    overflow: hidden;
+    padding: .15rem 0;
+    border-bottom: 1px solid #f3f3f3;
+}
+li {
+	list-style: none;
+}
+.f-shop-info li {
+	float: left;
+    width: 2.3rem;
+    text-align: center;
+}
+.f-info-title , .f-info-txt{
+	display: block;
+    font-size: .24rem;
+    letter-spacing: 0;
+    line-height: .33rem;
+    color: #999;
+    
+}
+.f-info-txt{
+	overflow: hidden;
+    color: #262626;
+}
+.shop-intro{
+	border-bottom: none;
+    font-size: .3rem;
+    color: #9e100e;
+    letter-spacing: 0;
+    padding: 0 .3rem;
+    text-align: left;
+    height: 1rem;
+    line-height: 1rem;
+    float: none;
+   
+}
+.f-box-all {
+	display: inline-block;
+    overflow: hidden;
+    width: 31.4%
+}
+.f-book-cen {
+	margin: 0 auto;
+    margin: .16rem 0 0 .1rem;
+    color: #262626;
+    height: .4rem;
+    line-height: .4rem;
+    overflow: hidden;
+    display: block;
+    width: 2.1rem;
+    font-size: .26rem;
+    letter-spacing: 0;
+}
+.f-book-img {
+	overflow: hidden;
+    width: 2.1rem;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-radius: .08rem;
+    margin: 0 auto;
+}
+.f-book-img img {
+	max-width: 2.1rem;
+    max-height: 2.1rem;
+    vertical-align: middle;
+    border: 0;
+}
+.f-book-price {
+    line-height: .36rem;
+    color: #9e100e;
+   margin-left: .2rem;
+}
+.f-detail-info {
+	background-color: #fff;
+}
+.f-detail-info h4 {
+	height: 1rem;
+    line-height: 1rem;
+    font-size: .24rem;
+    text-align: center;
+    color: #aeaeae;
+    background: #f3f3f3;
+    letter-spacing: 0;
+}
+.f-line {
+	display: inline-block;
+    position: relative;
+    top: -4px;
+    width: .48rem;
+    height: 1px;
+    background: #c7c7c7;
+}
+.f-good {
+	width: 6.9rem;
+    margin-left: .28rem;
+    padding-top: .5rem;
+    padding-bottom: .3rem;
+   
+}
+.f-p1 {
+	height: .44rem;
+    line-height: .44rem;
+    margin-bottom: .2rem;
+    font-size: .32rem;
+    color: #262626;
+    font-weight: bolder;
+    letter-spacing: 0;
+}
+.f-p2 {
+	font-size: .3rem;
+    color: #666;
+    letter-spacing: 0;
+    line-height: .54rem;
+    word-wrap: break-word;
+}
+.f-item {
+    max-width: 7.5rem;
+    padding-left: 0;
+}
+.f-item-list{
+	padding-bottom: .2rem;
+}
+.f-item-list img {
+	width: 100%;
+}
+.f-intro {
+	padding-left: 0rem;
+	overflow: hidden;
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.f-intro-item{
+	float: left;
+    width: 3.3rem;
+    margin-right: .18rem;
+    background-color: #fff;
+    border-radius: .08rem;
+    margin-top: .2rem;
+    margin-left: .07rem;
+}
+.f-intro-item a {
+	display: block;
+}
+.f-intro-img {
+	display: block;
+    width: 3.3rem;
+    text-align: center;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: .08rem .08rem 0 0;
+    background-color: #fff;
+}
+.f-intro-img img {
+	width: 100%;
+	max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+
+}
+.f-intro-title{
+	width: 3.06rem;
+    height: .8rem;
+    line-height: .4rem;
+    font-size: .26rem;
+    color: #262626;
+    letter-spacing: 0;
+    margin: 0 auto;
+    margin-top: .14rem;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.f-intro-txt{
+	width: 3.07rem;
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .22rem;
+    color: #999;
+    margin: .07rem auto .1rem;
+}
+.f-inleft {
+	display: block;
+    height: 100%;
+    float: left;
+    padding: 0 .1rem;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: .08rem;
+}
+.f-inright {
+	float: right;
+}
+.f-add {
+	height: 2rem !important;
+}
+.f-intro-price {
+	color: #9e100e;
+    height: .4rem;
+    line-height: .4rem;
+    letter-spacing: 0;
+    margin-bottom: .14rem;
+}
+.f-footer {
+	width: 100%;
+    min-height: 1.1rem;
+    position: fixed;
+    bottom: 0;
+   
+    background: #fff;
+    z-index: 200;
+    padding-bottom: env(safe-area-inset-bottom);
+    transform: translateZ(0);
+    max-width: 7.5rem;
+    margin: auto;
+    
+}
+.f-link1 {
+	float: left;
+    margin-top: .15rem;
+    margin-right: .5rem;
+    color: #666;
+}
+.f-link2 {
+	float: left;
+    margin-top: .15rem;
+    margin-right: .5rem;
+    color: #666;
+}
+.f-link3 {
+	float: left;
+    margin-top: .15rem;
+    color: #666;
+}
+.f-add-shop  {
+	float: right;
+    margin-top: .15rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .28rem;
+    background: #d48c68;
+    color: #fff;
+    width: 2rem;
+    border-radius: 5px 0 0 5px;
+}
+.f-bye{
+	float: right;
+    margin-top: .15rem;
+    width: 2rem;
+    height: .8rem;
+    font-size: .28rem;
+    line-height: .8rem;
+    text-align: center;
+    background: #9e100e;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.f-foot-inner {
+	position: relative;
+    padding: 0 .2rem;
+    width: 100%;
+    min-height: 1.1rem;
+}
+.f-foot-inner span {
+	display: block;
+    width: .4rem;
+    height: .4rem;
+    margin: 0 auto;
+}
+.f-foot-inner i {
+	display: block;
+    margin-top: .12rem;
+    font-size: .2rem;
+    height: .28rem;
+    line-height: .28rem;
+}
+.h-returntop {
+    display: none;
+    width: .92rem;
+    height: .92rem;
+    position: fixed;
+    bottom: 1.2rem;
+    right: .2rem;
+    z-index: 99;
+    background: url(../img/f-BackTop.png) no-repeat;
+    background-size: 100%;
+}
+.f-out {
+    right: .18rem;
+    width: 2.6rem;
+    background: #fff;
+    box-shadow: 2px 2px 16px 0 hsla(0,0%,67%,.5);
+    border-radius: .08rem;
+    top: 1.2rem;
+    z-index: 30;
+    display: none;
+    position: fixed;
+    max-width: 7.5rem;
+}
+.f-out a {
+	display: block;
+    width: 2.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    color: inherit;
+    text-decoration: none;
+}
+.f-out-txt {
+	font-size: .34rem;
+	line-height: .8rem;
+	font-style: normal;
+}
+.f-out-icon {
+    margin: 0.4rem .3rem 0 .31rem;
+    width: .4rem;
+    height: .4rem;
+}
+.f-out-icon img {
+	padding-top: .05rem;
+	width: .4rem;
+    height: .4rem;
+}
+i {
+	font-style: normal;
+}
+.f-hander {
+    z-index: 20;
+    top: 0;
+    max-width: 7.5rem;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+   
+    height: 1.3rem;
+    font-size: .34rem;
+    line-height: .88rem;
+    background-color: #fff;
+   
+    display: none;
+}
+.f-hander a {
+	position: absolute;
+    top: .16rem;
+    width: .56rem;
+    height: .56rem;
+    left: .16rem;
+    color: inherit;
+    text-decoration: none;
+    z-index: 22;
+    line-height: .6rem;
+}
+.f-hander a  span {
+	font-size: .4rem;
+}
+.f-hander-txt {
+	width: 4.8rem;
+    height: .88rem;
+    visibility: visible;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: .72rem;
+    text-align: center;
+    text-indent: 15px;
+    font-size: .35rem;
+}
+.f-hander-more {
+	position: absolute;
+    top: .16rem;
+    right: .2rem;
+    width: .56rem;
+    height: .56rem;
+}
+.f-hander-shop {
+	right: 1.08rem;
+	position: absolute;
+    width: .56rem;
+    height: .56rem;
+}
+.f-hander-shop img {
+	width: 90%;
+}
+.f-hander-more img {
+	width: 100%;
+}
+.f-drop {
+	
+    visibility: hidden;
+    width: 100%;
+    visibility: visible;
+    color: #333;
+    line-height: 1.25em;
+    background-color: #fff;
+    max-width: 7.5rem;
+    margin: auto;
+ 	overflow: hidden;
+ 	position: fixed;
+    display: flex;
+    top: .74rem;
+}
+.f-drop p {
+	float: left;
+	width: 33%;
+	text-align: center;
+	color: #333;
+}
+.f-drop p span {
+	font-size: .35rem;
+	color: #9e100e;
+	display: none;
+}
+.f-red i{
+	color: #9e100e;
+}
+.f-red span {
+	display: inline-block !important;
+}
+.f-region p {
+	position: relative;
+    width: 100%;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    font-size: .34rem;
+    font-weight: 500;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 8px 8px 0 0;
+}
+.f-show {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.f-region {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    top: 400px;
+    width: 100%;
+    max-width: 7.5rem;
+}
+.f-{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    top: 450px;
+    width: 100%;
+    bottom: 0;
+   
+    max-width: 7.5rem;
+}
+.f-city li{
+    margin-bottom: 10px
+}
+.f-areas span {
+    position: relative;
+    top: -.35rem;
+    left: 1.5rem;
+}
+img {
+    border: 0;
+    width: 100%;
+    background-size: 100%
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/mui.min.css">
+	<link rel="stylesheet" href="css/g-classes.css">
+	<script src="js/mui.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+    <title>document</title>
+</head>
+<style>
+	html,
+	body {
+		background-color: #efeff4;
+	}
+	/* p {
+		text-indent: 22px;
+	} */
+	/* span.mui-icon {
+		font-size: 14px;
+		color: #007aff;
+		margin-left: -15px;
+		padding-right: 10px;
+	} */
+	.mui-off-canvas-right {
+		color: #fff;
+	}
+	.title {
+		margin: 35px 15px 10px;
+	}
+	.title+.content {
+		margin: 10px 15px 35px;
+		color: #bbb;
+		text-indent: 1em;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	input {
+		color: #000;
+	}
+</style>
+	<body>
+		<!--侧滑菜单容器-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right" style="background: #f8f8f8;">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper" data-scroll="1">
+					<div class="mui-scroll">
+						<div class="g-nav-top">
+                            <a href="index.html" class="index">
+								<i class="homepage"></i>
+                            </a>
+                            <a href="search.html" class="g-search2">
+								<i class="search"></i>
+							</a>
+                            <a href="g-line.html" class="g-line">
+								<i class="close" id="offCanvasHide"></i>
+							</a>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a href="msg.html" class="g-msg">
+										<i class="msg"></i>
+										我的消息
+									</a>
+								</li>
+								<li>
+									<a href="a-shopping-car.html" class="a-shopping-car">
+										<i class="chart"></i>
+										购物车
+									</a>
+								</li>
+								<li>
+									<a href="mine.html" class="mine">
+										<i class="self"></i>
+										个人中心
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="seller"></i>
+										卖家中心
+									</a>
+								</li>
+							</ul>
+							<ul class="list1">
+								<li>
+									<a href="a-indent.html" class="a-indent">
+										我的订单
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										我的拍卖交易
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										资金账户
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										我的足迹
+									</a>
+								</li>
+								<li>
+									<a href="b-bookShop.html" class="b-bookShop">
+										书店区
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										在线拍卖
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										资讯
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										社区
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav head-top" style="background-color: #fafafa;">
+					<a href="index.html" class="logo" target="_self">
+						<img src="https://m.kongfz.com//search/template/mobile2/common/images/logo.png" alt="">
+					</a>
+					<a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-pull-right more"></a>
+					<div class="ipt">
+						<span class="g-search"><a href="search.html" class="search"></a></span>
+						<input type="text" id="g-top-ipt" placeholder="请输入书名或作者">
+					</div>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" >
+					<div class="mui-scroll">
+						<div class="mui-content-padded" style="margin: 0; max-width: 750px;margin: auto;">
+                            <div class="g-menu" id="fixed">
+								<div class="g-menu-inner">
+									<ul>
+										<li class="li g-sort">
+											<span id="sort">默认排序</span>
+											<i class="i"></i>
+										</li>
+										<li class="li g-location">
+											<span id="location">所在地</span>
+											<i class="i"></i>
+										</li>
+										<li class="li g-filter">
+											<span id="filter">筛选</span>
+											<i class="i"></i>
+										</li>
+									</ul>
+									<div class="g-list">
+									</div>
+								</div>
+							</div>
+							<div class="g-height g-height-hide"></div>
+							<div class="li-list g-sort-list">
+								<ul>
+									<li>
+										<a href="#" class="g-default checked">默认排序</a>
+										<span class="check"></span>
+									</li>
+									<li>
+										<a href="#" class="g-asc">价格升序</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#" class="g-descending">价格降序</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#">出版时间升序</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#">出版时间升序</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#">上书时间升序</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#">上书时间降序</a>
+										<span></span>
+									</li>
+								</ul>
+							</div>
+							<div class="li-list g-location-list">
+								<div class="g-tit">卖家所在地</div>
+								<ul>
+									<li class="g-location-check">不限</li>
+									<li>北京市</li>
+									<li>上海市</li>
+									<li style="margin-right: 0;">天津市</li>
+									<li>重庆市</li>
+									<li>安徽省</li>
+									<li>福建省</li>
+									<li style="margin-right: 0;">甘肃省</li>
+									<li>广东省</li>
+									<li>广西</li>
+									<li>贵州省</li>
+									<li style="margin-right: 0;">海南省</li>
+									<li>河北省</li>
+									<li>河南省</li>
+									<li>黑龙江省</li>
+									<li style="margin-right: 0;">湖北省</li>
+									<li>湖南省</li>
+									<li>吉林省</li>
+									<li>江苏省</li>
+									<li style="margin-right: 0;">江西省</li>
+									<li>辽宁省</li>
+									<li>内蒙古</li>
+									<li>宁夏</li>
+									<li style="margin-right: 0;">青海省</li>
+									<li>山东省</li>
+									<li>山西省</li>
+									<li>陕西省</li>
+									<li style="margin-right: 0;">四川省</li>
+									<li>西藏</li>
+									<li>新疆</li>
+									<li>云南省</li>
+									<li style="margin-right: 0;">浙江省</li>
+									<li>澳门</li>
+									<li>中国台湾</li>
+									<li>香港</li>
+									<li style="margin-right: 0;">海外地区</li>
+								</ul>
+							</div>
+							<div class="li-list g-filter-condition">
+								<div class="g-filter-select">
+									<p class="g-selected">您已选择</p>
+									<div class="g-select">
+										<p class="g-sel">
+											分类：
+											<span class="g-category">古玩杂项</span>	
+											<i></i>
+										</p>
+									</div>
+								</div>
+								<div class="g-filtrate">
+									<p>按价格筛选</p>
+									<div>
+										<span>商品价格</span>
+										<input type="text" class="g-low" placeholder="最低价">
+										—
+										<input type="text" class="g-high" placeholder="最高价">
+										<span class="g-sure">确定</span>
+									</div>
+								</div>
+								<div class="g-classify">
+									<p class="g-classification">分类浏览</p>
+									<ul>
+										<li>
+											<p class="txt1">小说</p>
+											<p class="txt2">(12818)</p>
+										</li>
+										<li>
+											<p class="txt1">文学</p>
+											<p class="txt2">(90797)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">历史</p>
+											<p class="txt2">(26722)</p>
+										</li>
+										<li>
+											<p class="txt1">地理</p>
+											<p class="txt2">(5176)</p>
+										</li>
+										<li>
+											<p class="txt1">法律</p>
+											<p class="txt2">(815)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">军事</p>
+											<p class="txt2">(728)</p>
+										</li>
+										<li>
+											<p class="txt1">经济</p>
+											<p class="txt2">(2316)</p>
+										</li>
+										<li>
+											<p class="txt1">艺术</p>
+											<p class="txt2">(24379)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">童书</p>
+											<p class="txt2">(305)</p>
+										</li>
+										<li>
+											<p class="txt1">生活</p>
+											<p class="txt2">(2071)</p>
+										</li>
+										<li>
+											<p class="txt1">教育</p>
+											<p class="txt2">(12652)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">语言文学</p>
+											<p class="txt2">(8621)</p>
+										</li>
+										<li>
+											<p class="txt1">哲理心理学</p>
+											<p class="txt2">(5402)</p>
+										</li>
+										<li>
+											<p class="txt1">宗教</p>
+											<p class="txt2">(29470)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">体育</p>
+											<p class="txt2">(703)</p>
+										</li>
+										<li>
+											<p class="txt1">工程技术</p>
+											<p class="txt2">(397)</p>
+										</li>
+										<li>
+											<p class="txt1">自然学科</p>
+											<p class="txt2">(2133)</p>
+										</li>
+										<li style="margin-right: 0;">
+											<p class="txt1">医药卫生</p>
+											<p class="txt2">(36285)</p>
+										</li>
+										<li>
+											<p class="txt1">综合性图书</p>
+											<p class="txt2">(10431)</p>
+										</li>
+									</ul>
+								</div>
+								
+							</div>
+							<div class="content">
+								<div class="g-seach-null">
+									<p class="search_null_tip1">抱歉，没有找到相关的商品</p>
+									<p class="search_null_tip2">换个其他关键词或更改下搜索条件试试吧！</p>
+								</div>
+									
+							</div>
+							<div class="g-page">
+								<a href="#" class="previous">上一页</a>
+								<div class="g-show-page">
+									<span class="bold page1">1</span>
+									/
+									<span class="page2">2</span>
+								</div>
+								<a href="#" class="next">下一页</a>
+							</div>
+							<div class="g-footer">
+								<div class="g-footer-last">
+									<a href="logon.php">登录</a>
+									<span>|</span>
+									<a href="sign.php">注册</a>
+									<span>|</span>
+									<a href="#" style="width: 1.781rem;">客服留言</a>
+									<span>|</span>
+									<a href="#" style="width: 1.43rem;">电脑版</a>
+								</div>
+								<div class="foot-bottom">
+									京ICP证041501 孔夫子旧书网
+								</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+				<div class="h-returntop"></div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div> 
+		</div>
+		<script src="js/g-sundry.js"></script>
+		<script>
+			
+			mui.init({
+				swipeBack: false,
+			});
+			 //侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			 //主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			 //菜单容器
+			var offCanvasSide = document.getElementById("offCanvasSide");
+			 //Android暂不支持整体移动动画
+			if (!mui.os.android) {
+				// document.getElementById("move-togger").classList.remove('mui-hidden');
+				var spans = document.querySelectorAll('.android-only');
+				for (var i = 0, len = spans.length; i < len; i++) {
+					spans[i].style.display = "none";
+				}
+			}
+			 //移动效果是否为整体移动
+			var moveTogether = false;
+			 //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+			var classList = offCanvasWrapper[0].classList;
+			 //变换侧滑动画移动效果；
+			mui('.mui-input-group').on('change', 'input', function() {
+				if (this.checked) {
+					offCanvasSide.classList.remove('mui-transitioning');
+					offCanvasSide.setAttribute('style', '');
+					classList.remove('mui-slide-in');
+					classList.remove('mui-scalable');
+					switch (this.value) {
+						case 'main-move':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+								moveTogether = false;
+							}
+							break;
+						case 'main-move-scalable':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+							}
+							classList.add('mui-scalable');
+							break;
+						case 'menu-move':
+							classList.add('mui-slide-in');
+							break;
+						case 'all-move':
+							moveTogether = true;
+							//整体滑动时，侧滑菜单在inner-wrap内
+							offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+							break;
+					}
+					offCanvasWrapper.offCanvas().refresh();
+				}
+			});
+			// document.getElementById('offCanvasShow').addEventListener('tap', function() {
+			// 	offCanvasWrapper.offCanvas('show');
+			// });
+			document.getElementById('offCanvasHide').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('close');
+			});
+			 //主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+			 //实现ios平台的侧滑关闭页面；
+			if (mui.os.plus && mui.os.ios) {
+				offCanvasWrapper[0].addEventListener('shown', function(e) { //菜单显示完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'none'
+					});
+				});
+				offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'close'
+					});
+				});
+			}
+			$(".g-sel i").on("singleTap",function(){
+				$(".g-category").html("古玩杂项");
+				$(".g-classify li").css("display","block")
+			})
+		</script>
+		
+	</body>
+</html>

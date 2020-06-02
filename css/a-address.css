@@ -1,0 +1,102 @@
+.a-three-notice {
+    padding: 15px;
+    height: auto;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    top: 45px;
+}
+.a-three-arealist {
+    padding-left: 15px;
+    background: #FFF;
+    border-bottom: 1px solid #EEE;
+    font-size: 17px;
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+.a-three-arealist {
+    padding-left: 15px;
+    background: #FFF;
+    border-bottom: 1px solid #EEE;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+.a-arealist1,.a-arealist2 {
+    line-height: 55px;
+    height: 55px;
+    padding-right: 15px;
+    border-bottom: 1px solid #EEE;
+    position: relative;
+    font-size: 0px;
+    box-sizing: border-box;
+}
+.a-arealist2 {
+    height: 65px;
+    padding: 14px 15px 14px 0;
+}
+.a-arealist1-1,.a-arealist2-1 {
+    font-size: 17px;
+    display: inline-block;
+}
+.a-arealist1-2 {
+    float: right;
+}
+.a-arealist1-2 img{
+    vertical-align: middle;
+}
+.a-arealist2-1 p {
+    line-height: 20px;
+}
+.a-txt1 {
+    font-size: 15px;
+    color: #999;
+}
+.a-button-save {
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+    height: 48px;
+}
+.a-button-save a {
+    display: block;
+    background: #d00000;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 48px;
+    text-decoration: none;
+}
+.a-arealist1 input,.a-arealist2 input {
+    width: 130px;
+    -webkit-box-flex: 1;
+    height: 55px;
+    line-height: 20px;
+    font-size: 15px;
+    background: transparent;
+    resize: none;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+.a-arealist2 input {
+    position: relative;
+    top: -17px;
+}
+#a-s-icon {
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+    width: 25px;
+    height: 28px;
+    background-image: url(../image/icon.png);
+    background-position: -588px -58px;
+    background-size: 1281%;
+}

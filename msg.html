@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <title>Document</title>
+</head>
+<body class="d-body">
+    <div class="d-container">
+        <div class="d-header">
+            <img class="d-img" src="img/d-left.png" alt="">
+            <a class="d-cover" href="javascript:void(0)"></a>
+            <div class="d-middle">
+                <span class="d-recently">最近联系人</span>
+                <span class="d-line1"></span>
+                <span class="d-mine">我的好友</span>
+                <span class="d-line2"></span>
+            </div>
+            <img class="d-dots" src="img/d-dot.png" alt="">
+            <div class="d-hidden" id="forUser">
+                <i></i>
+                <a rel="nofollow" href="msg.html" class="msg-link nav-lay-link">
+                    <img src="img/d-icon-msg.png" alt="">
+                    <span>消息</span>
+                </a>
+                <a rel="nofollow" href="index.html" class="home-link nav-lay-link">
+                    <img src="img/d-icon-index.png" alt="">
+                    <span>首页</span>
+                </a>
+                <a rel="nofollow" href="search.html" class="search-link nav-lay-link">
+                    <img src="img/d-icon-search.png" alt="">
+                    <span>搜索</span>
+                </a>
+                <a rel="nofollow" href="shoppping-car.html" class="car-link nav-lay-link">
+                    <img src="img/d-icon-shopping.png" alt="">
+                    <span>购物车</span>
+                </a>
+            </div>
+        </div>
+        <div class="d-list">
+            <img src="img/d-kongweb.jpg" alt="">
+            <div class="d-web">
+                <div class="d-inner">
+                    <p>孔夫子旧书网</p>
+                    <span>11/30</span>
+                </div>
+                <span>[活动]</span>
+            </div>
+        </div>
+    </div>
+    <div class="d-content">
+        <div class="d-header d-header1">
+            <img class="d-img" src="img/d-left.png" alt="">
+            <div class="d-middle">
+                <p>孔夫子旧书网</p>
+            </div>
+        </div>
+        <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<p>2019/11/27 17:10</p>
+				<ul>
+					<li>
+						<img src="img/d-kongweb.jpg" alt="">
+						<div>
+							<i></i>
+							书友<span></span>，您好，感谢您注册成为孔夫子旧书网会员~在这里，总能买到您想要的图书，总能交到趣味相投的书友！
+							<a href="">下载孔网APP，获得非凡购物体验！</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="mui-table-view mui-table-view-chevron"></ul>
+			</div>
+		</div>
+        <div class="d-input">
+            <img src="img/d-camera.png" alt="">
+            <input type="text" name="" id="" placeholder="">
+            <span>发送</span>
+        </div>
+    </div>
+ </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/book.js"></script>
+    <script>
+    var dot=document.getElementsByClassName("d-dots")[0];
+    var hidden=document.getElementsByClassName("d-hidden")[0]
+    hidden.style.display="none"
+    dot.onclick=function(){
+        if(hidden.style.display=="none"){
+            hidden.style.display="block"
+        }else {
+            hidden.style.display="none"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">   
+    <link rel="stylesheet" href="css/iconfont.css">  
+    <title>孔夫子旧书网：图书及艺术收藏品交易拍卖平台</title>
+</head>
+<body>
+    <div class="h-box">
+        <!-- 顶部搜索框 -->
+        <div class="h-title">
+            <div class="h-logo">
+                <img src="img/h-logo.png" alt="">
+            </div>
+            <div class="h-ipt">
+                <a href="search.html"> 
+                    <input type="text" name="" id="" placeholder="商品名称 作者 出版社 ISBN"> 
+                    <img src="img/h-search.png" alt="" class="h-search"> 
+                </a> 
+            </div>
+        </div>
+         <!--轮播图  -->
+         <div id="slider" class="mui-slider" >
+            <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/57/82/57825be21c468f9df23d4224449c57ba.jpg">
+                    </a>
+                </div>
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/1e/4d/1e4d59c1eba0c1d2ace3add24b7cab75.jpg">
+                    </a>
+                </div>
+                <!-- 第二张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/0b/c1/0bc13abed924fd3614dba498ff600dbf.jpg">
+                    </a>
+                </div>
+                <!-- 第三张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/e3/29/e329e72cbdc71957d8cb56bd3277ef9d.jpeg">
+                    </a>
+                </div>
+                <!-- 第四张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/b0/1d/b01de239dcf3c7641bc213cbe82edbef.jpg">
+                    </a>
+                </div>
+                <!-- 第五张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/60/2e/602e57ffe4b9e2a3efd12f341d0021ce.jpg">
+                    </a>
+                </div>
+                <!-- 第六张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/26/20/2620d2791f35416a4614061adf68ce3c.jpg">
+                    </a>
+                </div>
+                <!-- 第七张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/69/0c/690c5a73f9be002be7f63535aef2fd56.jpg">
+                    </a>
+                </div>
+                <!-- 第八张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/57/82/57825be21c468f9df23d4224449c57ba.jpg">
+                    </a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="https://img0.kfzimg.com/operation/1e/4d/1e4d59c1eba0c1d2ace3add24b7cab75.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+        </div>
+        <!-- 商品分类 -->
+        <div class="h-series">
+            <ul>
+                <li>
+                    <a href="g-line.html">
+                        <div class="h-imgBox">
+                            <img src="https://img0.kfzimg.com/operation/7e/67/7e67ee755c4751b08ca2cf4f6c167b5a.png" alt="">
+                        </div>
+                        <div class="h-detail">线装古籍</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="g-used.html">
+                        <div class="h-imgBox">
+                            <img src="https://img0.kfzimg.com/operation/68/78/6878c2adf90826c96b06689d4d0e9ad8.png" alt="">
+                        </div>
+                        <div class="h-detail">民国旧书</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="g-famous.html">
+                        <div class="h-imgBox">
+                            <img src="https://img0.kfzimg.com/operation/96/79/9679391cb144b9da2d5934baf7798bb3.png" alt="">
+                        </div>
+                        <div class="h-detail">名人墨迹</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="g-sundry.html">
+                        <div class="h-imgBox">
+                            <img src="https://img0.kfzimg.com/operation/87/37/873758d4bbdf66f53e4aa444b7489756.png" alt="">
+                        </div>
+                        <div class="h-detail">古玩杂项</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="g-all.html">
+                        <div class="h-imgBox">
+                            <img src="https://img0.kfzimg.com/operation/0d/f9/0df9dbd219fbe285efb7412b4649290f.png" alt="">
+                        </div>
+                        <div class="h-detail">全部分类</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 今日上新 -->
+        <div class="h-new">
+            <div class="h-top">
+                <div class="h-left">
+                    <a href="g-line.html">
+                        <div class="h-tit">
+                            <h4>今日上新</h4>
+                            <p>发现新上好书</p>
+                        </div>
+                        <div class="h-img">
+                            <img src="https://img0.kfzimg.com/operation/7d/ec/7dec8863d15871dfa80e06862635e9fb.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="h-left">
+                    <a href="g-famous.html">
+                        <div class="h-tit">
+                            <h4>书店排行榜</h4>
+                            <p>发现口碑好店</p>
+                        </div>
+                        <div class="h-img">
+                            <img src="https://img0.kfzimg.com/operation/71/14/71147277eef7ff00046290e19a11a082.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="h-top">
+                <div class="h-left">
+                    <a href="c-new.html">
+                        <div class="h-tit">
+                            <h4>新书频道</h4>
+                            <p>发现孔网新书</p>
+                        </div>
+                        <div class="h-img">
+                            <img src="https://img0.kfzimg.com/operation/81/ae/81ae33f2ce1d23818c64b917e9780269.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="h-left">
+                    <a href=" book-list.html">
+                        <div class="h-tit">
+                            <h4>藏书单</h4>
+                            <p>为你推荐好书</p>
+                        </div>
+                        <div class="h-img">
+                            <img src="https://img0.kfzimg.com/operation/af/e6/afe651e4767bf0c94b7d53275c061831.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 好书推荐 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>好书推荐</h4>
+                <a href="c-recommend1.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 书单推荐 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>书单推荐</h4>
+                <a href="book-list.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="swiper">  
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 新书广场 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>新书广场</h4>
+                <a href="c-new.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <ul class="h-listItem"></ul>
+            </div>
+        </div>
+        <!-- 旧书-国学经典 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>旧书-国学经典</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <ul class="h-listItem"></ul>
+            </div>
+            <div class="h-changebox">
+                <div class="h-change">
+                    换一换
+                    <img src="img/h-change.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 新书-新近出版 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>新书-新近出版</h4>
+                <a href="c-new.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <ul class="h-listItem"></ul>
+            </div>
+            <div class="h-changebox">
+                <div class="h-change">
+                    换一换
+                    <img src="img/h-change.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 新书销售排行 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>新书销售排行</h4>
+                <a href="c-new.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <ul class="h-listItem"></ul>
+            </div>
+            <div class="h-changebox">
+                <div class="h-change">
+                    换一换
+                    <img src="img/h-change.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 旧籍寻踪 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>旧籍寻踪</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 艺文展览 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>艺文展览</h4>
+                <a href="c-new.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 古籍存览 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>古籍存览</h4>
+                <a href="g-line.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 民国旧书 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>民国旧书</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 古籍拍卖 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>古籍拍卖</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div> 
+            <div class="h-book"></div>
+        </div>
+        <!-- 民国图书文献拍卖 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>民国图书文献拍卖</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 民国期刊拍卖 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>民国期刊拍卖</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 艺术品拍卖 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>艺术品拍卖</h4>
+                <a href="g-used.html">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-series1">
+                <ul>
+                    <li>名人墨迹</li>
+                    <li>名人字画</li>
+                    <li>连环画</li>
+                    <li>钱币</li>
+                    <li>版画宣传画</li>
+                    <li>邮票税票</li>
+                    <li>古玩杂项</li>
+                </ul>
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 艺术品专场 -->
+        <div class="h-good">
+            <div class="h-goodTit">
+                <h4>艺术品专场</h4>
+                <a href="#">
+                    <span>
+                        更多 
+                        <div class="iconfont h-squera">&#xe606;</div> 
+                    </span> 
+                </a> 
+            </div>
+            <div class="h-book">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 为您推荐 -->
+        <div class="h-recommend">
+            <h4>为您推荐</h4>
+            <div class="h-list1">
+                <ul id="h-item"></ul>
+            </div>
+        </div>
+        <!-- 没有更多 -->
+        <div class="h-nomore">
+            <div class="h-inner">
+                - 没有更多 -
+            </div>
+        </div>
+        <!-- 底部固定部分 -->
+        <div class="h-bottom">
+            <ul>
+                <li>
+                    <a href="index.html" class="h-active" id="h-active">
+                        <div class="iconfont">
+                            &#xe665;
+                        </div>
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="b-bookShop.html" class="h-active">
+                        <div class="iconfont">
+                            &#xe8a8; 
+                        </div>
+                        书店
+                    </a>
+                </li>
+                <li>
+                    <a href="a-shopping-car.html" class="h-active">
+                        <div class="iconfont">
+                            &#xe6be;
+                        </div>
+                        购物车
+                    </a>
+                </li>
+                <li  id="h-mine">
+                    <a href="#" class="h-active" id="h-jump">
+                        <div class="iconfont">
+                            &#xe51a;
+                        </div>
+                        我的
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <!-- 下载App -->
+        <div class="h-app"></div>
+        <!-- 返回顶部 -->
+        <div class="h-returntop"></div>
+    </div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/swiper.min.js"></script> 
+<script src="js/index.js"></script>     
+<script>
+    const mine = document.getElementById("h-mine");
+    const jump = document.getElementById("h-jump");
+    mine.onclick=function() {
+        var x=document.cookie; 
+        if(x=="") {
+            jump.setAttribute("href","e-sign.php")
+        }else {
+            jump.setAttribute("href","mine.html")
+        }
+    }
+</script>
+</html>

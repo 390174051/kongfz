@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/a-shopping-car.css">
+    <title>Document</title>
+</head>
+<style>
+*{
+    list-style: none;
+}
+#a-info {
+    width: 100%;
+    margin: auto;
+    padding: .2rem .3rem;
+    border-radius: .2rem;
+    -webkit-box-shadow: 0 0.06rem 0.16rem 0 hsla(0,0%,60%,.1);
+    box-shadow: 0 0.06rem 0.16rem 0 hsla(0,0%,60%,.1);
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.a-sql-shop {
+    height: .78rem;
+    line-height: .78rem;
+    font-size: 14px;
+    color: #333;
+}
+.a-sql-icon {
+    float: left;
+}
+.a-sql-icon i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(./image/icon.png);
+    background-position: -233px -28px;
+    background-size: 1550%;
+    float: left;
+    margin: 30px 10px 0 0;
+}
+.a-sql-tem {
+    float: left;
+    height: .74rem;
+    width: 3.8rem;
+    line-height: .37rem;
+    margin-bottom: .1rem;
+    font-size: .26rem;
+}
+.a-sql-par input{
+    width: .68rem;
+    height: .4rem;
+    line-height: .36rem;
+    border: 1px solid #eaeaea;
+    border-right: none;
+    border-left: none;
+    color: #999;
+    outline: none;
+    text-align: center;
+}
+.a-sql-par span {
+    display: inline-block;
+    width: .52rem;
+    height: .4rem;
+    line-height: .37rem;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    line-height: .37rem;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    position: relative;
+    top: -0.01rem;
+}
+.a-sql-img {
+    float: left;
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-right: .2rem;
+    border-radius: .1rem;
+    text-align: center;
+    overflow: hidden;
+}
+#a-sql-price {
+    height: .4rem;
+    line-height: .5rem;
+    font-size: .28rem;
+    color: #9e100e;
+    border: none;
+}
+.a-sql-qua {
+    display: inline-block;
+    height: .36rem;
+    line-height: .36rem;
+    padding: 0 .1rem;
+    border-radius: .08rem;
+    font-size: .22rem;
+    color: #999;
+    background: #fafafa;
+}
+.a-chock {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(./image/icon.png);
+    background-position: -233px -28px;
+    background-size: 1550%;
+    position: relative;
+    top: 3px;
+}
+</style>
+<body>
+    <div>
+        <div class="a-top">
+            <span class="a-top-txt">购物车 (0)</span>
+            <div class="a-top-redact" id="redact">编辑</div>
+            <i><img src="./image/information_icon.png" alt="" class="a-top-image"></i>
+            <span class="a-top-information-num">0</span>
+        </div>
+        <div style="padding: 8px 10px;">
+
+            <div id="a-info">
+
+            </div>   
+        </div>
+  
+
+
+        <div class="a-bottom">  
+            <div class="a-bottom-left">
+                <!-- <i class="a-chock"></i>
+                <span>全选</span> -->
+            </div>
+            <div class="a-bottom-btn"><a href="./a-indent.html">结算</a></div>
+            <div class="a-bottom-mid">
+                <span class="a-tips">不含运费</span>
+                <span class="a-total">合计:</span>
+                <span class="a-total-num">￥<span class="a-allprice">0</span>.00</span>
+            </div>
+            <div class="a-bottom-btn1">删除</div>
+            <div class="a-bottom-btn2">移除收藏</div>
+        </div>
+        <div class="b-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="b-foot-img">
+                            <img src="img/index.png" alt="">
+                        </div>
+                        <div class="b-foot-txt">首页</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="b-bookShop.html">
+                        <div class="b-foot-img">
+                            <img src="img/book.png" alt="">
+                        </div>
+                        <div class="b-foot-txt">书店</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="a-shopping-car.html">
+                        <div class="b-foot-img">
+                            <img src="img/shop1.png" alt="">
+                        </div>
+                        <div class="b-foot-txt">购物车</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mine.html">
+                        <div class="b-foot-img">
+                            <img src="img/mine.png" alt="">
+                        </div>
+                        <div class="b-foot-txt">我的</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/index1.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var redact=document.getElementById("redact");
+        var image =document.getElementsByClassName("a-top-image");
+        var txt = document.getElementsByClassName("a-top-information-num")
+        var btn1 = document.getElementsByClassName("a-bottom-btn")
+        var btn2 = document.getElementsByClassName("a-bottom-btn1")
+        var btn3 = document.getElementsByClassName("a-bottom-btn2")
+        var mid = document.getElementsByClassName("a-bottom-mid")
+        var num=0;
+
+        redact.onclick=function(){
+            if(num==0){
+                redact.innerHTML="完成";
+                image[0].style.display="none"
+                txt[0].style.display="none"
+                btn1[0].style.display="none"
+                btn2[0].style.display="block"
+                btn3[0].style.display="block"
+                mid[0].style.display="none"
+                num=num+1;
+            }else{
+                redact.innerHTML="编辑";
+                image[0].style.display=""
+                txt[0].style.display=""
+                btn1[0].style.display="block"
+                btn2[0].style.display="none"
+                btn3[0].style.display="none"
+                mid[0].style.display="block"
+                num=0;
+            }
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState===4 && xhr.status ===200){
+                var sqlarr=JSON.parse(localStorage.getItem('shopid'))
+                console.log(sqlarr)
+                var articles = JSON.parse(xhr.responseText);
+                for(var i=1;i<sqlarr.length;i++){
+                    var info = document.getElementById("a-info")
+                    info.innerHTML+=`
+                    <div class="v-dele">
+                        <div class="a-sql-shop"><div class="a-sql-icon a-sele1"><i style="margin: 10px 10px 0 0;background-position: -233px -28px;" class="a-gg"></i></div>${articles[0].book_Shop}</div>
+                        <div style="height: 2rem;padding:0.3rem 0">
+                            <div class="a-sql-icon a-sele2"><i></i></div>
+                            <div class="a-sql-img">
+                                <img src="${articles[sqlarr[i]-1].swiper_img1}" width="100%" height="100%"/>
+                            </div>
+                            <div class="a-sql-tem">
+                                <p style="margin-bottom: 10px">${articles[sqlarr[i]-1].book_name}</p>
+                                <span class="a-sql-qua">${articles[sqlarr[i]-1].book_quality}</span>
+                                <div class="a-sql-par">
+                                    <span id="a-sql-price">${articles[sqlarr[i]-1].book_price}</span>
+                                    <div style="float: right;">
+                                        <span class="a-minus">-</span><input type="text" value=1 class="a-value1" /><span class="a-add">+</spam>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    `
+                }
+            }
+            var sele1=document.getElementsByClassName("a-sele1")
+            var sele2=document.getElementsByClassName("a-sele2")
+            var allprice=document.getElementsByClassName("a-allprice")[0]
+            var minus = document.getElementsByClassName("a-minus")
+            var add = document.getElementsByClassName("a-add")
+            var value1 = document.getElementsByClassName("a-value1")
+            var dele = document.getElementsByClassName("v-dele")
+            var gg= document.getElementsByClassName("a-gg")
+            // var num3=0;
+            // var num4=0;
+            var arr0 = new Array
+            for(var i=0; i<sele1.length; i++){
+                arr0.push(0)
+            }
+            var aprice=0
+            for(var i=0; i<sele1.length; i++){
+                sele1[i].index=i
+                sele1[i].onclick=function(){
+                    // console.log(value1[this.index].value)
+                    if(this.children[0].style.backgroundPosition=="-233px -51px"){
+                        this.children[0].style.backgroundPosition="-233px -28px"
+                        this.parentNode.nextElementSibling.children[0].children[0].style.backgroundPosition="-233px -28px"
+                        allprice.innerHTML-=parseInt(this.parentNode.nextElementSibling.children[2].children[2].children[0].innerHTML)*parseInt(value1[this.index].value)
+                        // allprice.innerHTML=aprice
+                        arr0[this.index]=0
+                    }else{
+                        this.children[0].style.backgroundPosition="-233px -51px"
+                        this.parentNode.nextElementSibling.children[0].children[0].style.backgroundPosition="-233px -51px"
+                        allprice.innerHTML=parseInt(allprice.innerHTML)+parseInt(this.parentNode.nextElementSibling.children[2].children[2].children[0].innerHTML)*parseInt(value1[this.index].value)
+                        // allprice.innerHTML=aprice
+                        arr0[this.index]=1
+                    }
+                }
+            }
+            for(var i=0;i<sele1.length;i++){
+                sele1[i].index=i
+                minus[i].onclick=function(){
+                    if(this.nextElementSibling.value>0){
+                        this.nextElementSibling.value=this.nextElementSibling.value-1
+                        if(this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].style.backgroundPosition=="-233px -51px"){
+                        allprice.innerHTML=parseInt(allprice.innerHTML)-parseInt(this.parentNode.previousElementSibling.innerHTML)
+                    }
+                    }
+                }
+                add[i].onclick=function(){
+                    this.previousElementSibling.value=parseInt(this.previousElementSibling.value)+1
+                    if(this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].style.backgroundPosition=="-233px -51px"){
+                        allprice.innerHTML=parseInt(allprice.innerHTML)+parseInt(this.parentNode.previousElementSibling.innerHTML)
+                    }
+                }
+            }
+            var arrnum = new Array
+            var sure = new Array
+            btn1[0].onclick=function() {
+                arrnum=[]
+                sure=[]
+                for(var i=0;i<value1.length;i++){
+                    if(sele2[i].children[0].style.backgroundPosition=="-233px -51px"){
+                        arrnum.push(parseInt(value1[i].value))
+                        sure.push(parseInt(sqlarr[i+1]))
+                    }
+                }
+                // console.log(sure)
+                localStorage.setItem("snum",JSON.stringify(arrnum))
+                localStorage.setItem("sure",JSON.stringify(sure))
+            }
+            
+
+            //删除
+            var dearr = new Array
+            btn2[0].onclick=function(){
+                dearr=[]
+                var newarr = dearr.concat(JSON.parse(localStorage.getItem('shopid')))
+                // console.log(newarr)
+                for(var i=0;i<JSON.parse(localStorage.getItem("shopid")).length-1;i++){
+                    // console.log(gg[i].style.backgroundPosition)
+                    if(gg[i].style.backgroundPosition=="-233px -51px"){
+                        dele[i].innerHTML=""
+                        newarr.splice(i+1,1)
+                        // console.log(newarr)
+                        localStorage.setItem("shopid",JSON.stringify(newarr))
+                    }
+                }
+            }
+        } 
+        xhr.open('GET','http://localhost/kongfz/a-connect.php', true);
+        xhr.send();
+
+
+    </script>
+
+</body>
+</html>

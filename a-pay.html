@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/a-indent.css">
+    <title>Document</title>
+</head>
+<style>
+li {
+    list-style: none;
+}
+.a-f-all {
+    background-color: #fff;
+}
+.a-f-sum {
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 45px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+}
+.a-f-sum p {
+    font-size: 17px;
+}
+.a-money {
+    color: #d00000;
+    float: right;
+}
+.a-f-txt {
+    font-size: 14px !important;
+    color: #999;
+}
+.a-gray {
+    background-color: #f2f2f2;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #666;
+    overflow: hidden;
+}
+.a-gray a {
+    color: #0d7dbd;
+    float: right;
+    text-decoration: none;
+}
+.a-box {
+    background-color: #fff;
+    padding-left: 15px;
+}
+.a-box ul {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0.75rem 15px 0;
+    line-height: 24px;
+    font-size: 0.6rem;
+    color: #333;
+    overflow: hidden;
+}
+.a-box ul li {
+    margin-right: 7.5px;
+    float: left;
+}
+.a-txt {
+    padding-top: 3px;
+}
+.a-txt1 {
+    margin-top: 15px;
+}
+.a-bottom {
+    margin-top: 16px;
+    padding-left: 15px;
+    color: #0d7dbd;
+    font-size: 12px;
+}
+</style>
+<body>
+        <div class="a-two-top">
+            <a href="./a-indent.html" class="a-two-return">
+                <i class="a-two-return-icon"><img src="./image/return_icon.png" alt=""></i>
+            </a>
+            <h3 class="a-two-title">付款</h3>
+            <a href="" class="a-two-more">
+                <i class="a-two-more-icon"><img src="./image/more_icon.png" alt=""></i>
+                <span class="a-two-more-num">0</span>
+            </a>
+        </div>
+        <div class="a-f-all">
+            <div class="a-f-sum">
+                <p>应付金额<span class="a-money">￥ <span id="a-allprice3"></span>.00</span></p>
+                <div style="margin-top: 10px; line-height: 20px; box-sizing: border-box;">
+                    <p class="a-f-txt">付款说明：<i style="font-style: normal;">店铺订单（订单编号：83746376）</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="a-gray">
+        <span>请选择付款方式</span>
+        <a href="./a-commission.html">了解手续费详情</a>
+    </div>
+    <div class="a-box">
+        <a href="">
+            <ul>
+                <li>
+                    <img src="./image/kfz.png" alt="">
+                </li>
+                <li class="a-txt">
+                    <p style="font-size: 17px; color: #999;">资金账户</p>
+                    <p style="font-size: 15px; color: #999;">您的资金账户暂未开通</p>
+                </li>
+            </ul>
+        </a>
+        <a href="https://mclient.alipay.com/home/exterfaceAssign.htm?_input_charset=utf-8&subject=孔网+8418453016557001&sign=8146e1748067e193e7c72824863f3409&body=孔夫子旧书网&notify_url=https%3A%2F%2Fpay.kongfz.com%2Finterface%2FAlipayDirectPayNotifyAlipay.new&alipay_exterface_invoke_assign_model=cashier&alipay_exterface_invoke_assign_target=mapi_direct_trade.htm&payment_type=1&out_trade_no=201912171638071140517080558456&partner=2088101891087430&alipay_exterface_invoke_assign_sign=_xh_etsce_felx_e_j_u_f_d_gjj_lgdk_xvmkp_vezs_q_csi_q_gnln_d6lkaqszzu_d4_a%3D%3D&service=alipay.wap.create.direct.pay.by.user&total_fee=23.56&app_pay=y&return_url=https%3A%2F%2Fm.kongfz.com%2Fpay%2FPay%2FPayment%2FpayResult&payReqId=8418453016557001&sign_type=MD5&seller_id=2088101891087430&alipay_exterface_invoke_assign_client_ip=1.192.147.10">
+            <ul>
+                <li>
+                    <img src="./image/zfb.png" alt="">
+                </li>
+                <li class="a-txt a-txt1">
+                    <p style="float: left; font-size: 17px;">支付宝</p>
+                </li>
+                <li style="line-height: 62px; float: right;">
+                    <img src="./image/reight_icon.png" alt="" style="float: right; margin: 23px 0 0 15px;"">
+                    <p style="float: right; font-size: 15px; color: #999;">手续费 ¥<span>0.00</span></p>
+                </li>
+            </ul>
+        </a>
+        <a href="https://h5pay.jd.com/jdpay/payLogin?tradeNum=201912171639261140517029822052&orderId=201912171639262014230101585427&key=e51bcb01b97e5afa9032e3096945086d368532c654dfc1ddb6e1c36f1f0e7f1b93ac5ed7c0241b38308b7c5f16021d3c09f8f5ff4b015ae69ea6b2b571dd0807">
+            <ul>
+                <li>
+                    <img src="./image/jd.png" alt="">
+                </li>
+                <li class="a-txt a-txt1">
+                    <p style="float: left; font-size: 17px;">京东支付</p>
+                </li>
+                <li style="line-height: 62px; float: right;">
+                    <img src="./image/reight_icon.png" alt="" style="float: right; margin: 23px 0 0 15px;">
+                    <p style="float: right; font-size: 15px; color: #999;">手续费 ¥<span>0.00</span></p>
+                </li>
+                <li style="margin-top: 1rem;">
+                    <div style="font-size: 14px;color: #bf7f5f;">
+                        2019.12-2020.2：京东支付新用户立减8元，老用户随机减最高666元
+                    </div>
+                </li>
+            </ul>
+        </a>
+    </div>
+    <div class="a-bottom">
+        如果您想使用“微信支付”，请下载孔夫子旧书网APP
+    </div>
+    <script src="./font.js"></script>
+    <script>
+        var allprice3 = document.getElementById("a-allprice3")
+        allprice3.innerHTML=localStorage.getItem("allprice")
+    </script>
+</body>
+</html>

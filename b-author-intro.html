@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/my.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script src="js/detail.js"></script>
+    <script>
+        var content=document.getElementById("content");
+        var str=window.location.search;
+        var id=str.split("=")[1];
+        // console.log(str);
+        var xhr=new XMLHttpRequest();   
+        xhr.onreadystatechange=function() {
+            if(xhr.readyState===4 && xhr.status===200) {
+                var articles=JSON.parse(xhr.responseText);
+                // console.log(articles)
+                content.innerHTML=`
+                    <div class="b-au-nav">
+                        <img src="img/return.png" alt="" class="b-return">
+                        <span>【名家】${articles.author_name}</span>
+                        <div class="b-rot">
+                            <img src="img/rot.png" alt="">
+                        </div>
+                    </div>
+                    <div class="b-au-img">
+                        <img src="${articles.author_img}" alt="">
+                    </div>
+                    <div class="b-book-list">
+                        <ul>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img1}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title1}</div>
+                                        <div class="b-item2">${articles.book_item1}</div>
+                                        <div class="b-item3">${articles.book_content1}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img2}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title2}</div>
+                                        <div class="b-item2">${articles.book_item2}</div>
+                                        <div class="b-item3">${articles.book_content2}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img3}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title3}</div>
+                                        <div class="b-item2">${articles.book_item3}</div>
+                                        <div class="b-item3">${articles.book_content3}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img4}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title4}</div>
+                                        <div class="b-item2">${articles.book_item4}</div>
+                                        <div class="b-item3">${articles.book_content4}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img5}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title5}</div>
+                                        <div class="b-item2">${articles.book_item5}</div>
+                                        <div class="b-item3">${articles.book_content5}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img6}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title6}</div>
+                                        <div class="b-item2">${articles.book_item6}</div>
+                                        <div class="b-item3">${articles.book_content6}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img7}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title7}</div>
+                                        <div class="b-item2">${articles.book_item7}</div>
+                                        <div class="b-item3">${articles.book_content7}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img8}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title8}</div>
+                                        <div class="b-item2">${articles.book_item8}</div>
+                                        <div class="b-item3">${articles.book_content8}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img9}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title9}</div>
+                                        <div class="b-item2">${articles.book_item9}</div>
+                                        <div class="b-item3">${articles.book_content9}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img10}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title10}</div>
+                                        <div class="b-item2">${articles.book_item10}</div>
+                                        <div class="b-item3">${articles.book_content10}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img11}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title11}</div>
+                                        <div class="b-item2">${articles.book_item11}</div>
+                                        <div class="b-item3">${articles.book_content11}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="border: none">
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img12}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title12}</div>
+                                        <div class="b-item2">${articles.book_item12}</div>
+                                        <div class="b-item3">${articles.book_content12}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="border: none">
+                                <div class="b-total-cover">
+                                    <div class="b-left">
+                                        <img src="${articles.book_img13}" alt="">
+                                    </div>
+                                    <div class="b-right">
+                                        <div class="b-item1">${articles.book_title13}</div>
+                                        <div class="b-item2">${articles.book_item13}</div>
+                                        <div class="b-item3">${articles.book_content13}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-end">
+                        <div class="b-end-line"></div>
+                        <div class="b-no-more">没有更多了</div>
+                        <div class="b-end-line"></div>
+                    </div>
+                `
+            }
+            var back=document.getElementsByClassName("b-return")[0];
+            back.onclick=function() {
+                window.history.go(-1);
+            }
+        }
+        xhr.open("GET","http://localhost/kongfz/b-author-intro.php?id="+id, true);
+        xhr.send();
+    </script>
+</body>
+</html>

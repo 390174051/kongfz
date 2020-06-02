@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/f-m.css">
+    <title>Document</title>
+</head>
+<style>
+.f-comments {
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    max-width: 750px;
+   margin: auto;
+    top: 0;
+    background: #fafafa;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    padding: 0;
+    z-index: 9999;
+}
+.f-comments a {
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    position: absolute;
+    left: 0;
+    color: #333
+
+}
+.f-comments h3 {
+    font-size: 17px;
+    color: #333;
+    display: block;
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    top: .5rem;
+    text-align: center;
+    z-index: 9999;
+    height: 45px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.f-comments i {
+    display: block;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    right: 0;
+    top: 0;
+}
+
+.f-comments i img{
+    padding-top: .26rem;
+    display: block;
+    width: 70%;
+}
+.f-clear {
+    margin-top: 45px;
+    background-color: #fff;
+    position: relative;
+    z-index: 66;
+    height: 65px;
+
+}
+.f-clear ul {
+    padding-left:0; 
+}
+.f-clear ul li{
+    float: left;
+    width: 25%;
+    padding-left: 0;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.f-pl a p{
+    color: #9e100e;
+}
+.f-com-box {
+    display: block;
+    border-top: 1px solid #eee;
+    background: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    position: relative;
+    word-break: break-all;
+    line-height: 21px;
+    font-size: 15px;
+}
+.f-pd30 {
+    padding: 0 15px;
+}
+.f-clearfix {
+    padding-top: 10px
+}
+.f-com-right {
+    color:#999;
+    float: right;
+}
+.f-com-left {
+    color: #d00000;
+}
+.f-coom-time {
+    margin-top: 7.5px;
+}
+.f-t10 {
+    margin-top: 5px;
+}
+.f-t15 {
+    border-top: 1px solid #eee;
+}
+.f-gary {
+    color: #999
+}
+.f-bind {
+    color: #333;
+    padding: 7px .8rem;
+    margin-bottom: 8px
+}
+/* .f-lines {
+    height: 8px;
+    border-top: 1px solid #eee;
+    background: #f8f8f8;
+    width: 100% !important;
+    max-width: 7.5rem;
+} */
+</style>
+<body>
+    <!-- <div class="f-show mui-backdrop">
+			
+    </div> -->
+    <div class="f-comments">
+        <a href="javascript:void(window.history.go(-1));">
+            <span class="mui-icon mui-icon-back"></span>
+        </a>
+        <h3>
+            查看评价
+        </h3>
+        <i>
+            <img src="./img/f-more-h.png" alt="">
+        </i>
+    </div> 
+    <div class="allcoments">
+         <div class="f-clear">
+        <ul class="f-ul">
+            <li >
+                <a href="#">
+                    <p>全部评论</p>
+                    <p>1005</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>好评</p>
+                    <p>1001</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>中评</p>
+                    <p>4</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>差评</p>
+                    <p>0</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+<div class="f-com-box">
+        <div class="f-pd30">
+            <div class="f-clearfix">
+                <span class="f-com-right">傲***8</span>
+                <div class="f-com-left">
+                    <span></span>
+                    <span >好评</span>
+                </div>
+            </div>
+            <p class="f-t10">好评</p>
+            <p class="f-com-time">2019年12月15日 19:01</p>
+        
+        </div>
+    <div class="f-t15"></div>
+   <p class="f-bind">
+       <span class="f-gary">商品：</span>
+       清代空白册 大部分未使用
+   </p>
+</div>
+    </div>
+   
+    <!-- <script src="./js/f-m.js"></script> -->
+    <script>
+        var li = document.getElementsByClassName("f-ul")[0].children;
+       for(var i=0; i<li.length;i++){
+           li[i].onclick=function(){
+               for(var j=0 ; j<li.length;j++){
+                li[j].classList.remove("f-pl")
+               }
+               this.classList.add("f-pl")
+           }
+       }
+        
+    </script>
+</body>
+</html>

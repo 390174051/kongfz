@@ -1,0 +1,700 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "微软雅黑";
+}
+.g-nav-top {
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    width: 100% !important;
+    height: 1.054rem !important;
+    line-height: 1.054rem;
+    overflow: hidden;
+}
+.g-nav-top a {
+    height: 1.054rem;
+    line-height: 1.054rem;
+    width: 33.3%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.g-nav-top a i {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 25%;
+}
+.homepage {
+    background: url(../img/g-homepage.png) no-repeat;
+}
+.search {
+    background: url(../img/g-search.png) no-repeat;
+}
+.close {
+    background: url(../img/g-close.png) no-repeat;
+}
+.list {
+    width: 100%;
+    height: auto;
+}
+.list ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.list li {
+    width: 100%;
+    height:0.9376rem;
+    line-height:0.9376rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.list li a {
+    width: 100%;
+    height: 100%;
+    font-size: 0.3516rem;
+    color: #333;
+    padding-left: 0.3516rem;
+}
+.list li a i {
+    display: inline-block;
+    width: 0.4688rem;
+    height: 0.5157rem;
+    background-position: bottom;
+    background-size: 90%;
+}
+.msg {
+    background: url(../img/g-message.png) no-repeat;
+}
+.chart {
+    background: url(../img/g-chart.png) no-repeat;
+}
+.self {
+    background: url(../img/g-self.png) no-repeat;
+}
+.seller {
+    background: url(../img/g-seller.png) no-repeat;
+}
+.list1 li a{
+    padding-left: 0.9rem;
+}
+.head-top {
+    padding: 0;
+    position: relative;
+    height: 1.0548rem;
+    max-width: 750px;
+    margin: auto;
+    margin: auto;
+    max-height: 1.0548rem;
+}
+.logo {
+    display: block;
+    width:  2.344rem;
+    height: 1.0548rem;
+    display: inline-block;
+    text-align: center;
+}
+.logo img {
+    width: 1.617rem;
+    height: 0.586rem;
+    margin-top: 10px;
+}
+.ipt {
+    background: #f2f2f2;
+    border-radius: 2.5px;
+    width: auto;
+    height: 0.679rem;
+    line-height: 0.679rem;
+    position: absolute;
+    left: 2.344rem;
+    right: 1.0548rem;
+    top: 8px;
+}
+.g-search {
+    display: inline-block;
+    width: 0.679rem;
+    height: 0.679rem;
+    background: url(../img/g-search-m.png) no-repeat;
+    background-size: 100%;
+}
+#g-top-ipt {
+    background: none;
+    height: 0.679rem;
+    line-height: normal;
+    font-size: 0.328rem;
+    font-family: "微软雅黑";
+    color: #333;
+    padding-left: 0.679rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+#g-top-ipt::placeholder {
+    font-size: 0.328rem;
+}
+.more {
+    width: 1.0548rem;
+    height: 1.0548rem;
+    margin: 0 !important;
+    background: url(../img/g-more.png) no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+.g-menu {
+    height: 1.054rem;
+}
+.g-menu-inner {
+    padding-right: 0.3rem;
+    line-height: 1.054rem;
+    height: 1.054rem;
+    border-top: 1px solid #eee;
+    font-size: 0.328rem;
+    position: relative;
+    color: #333;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.g-menu-inner li {
+    float: left;
+    text-align: center;
+    height: 1.054rem;
+    color: #333;
+}
+.g-menu-inner li span {
+    font-size: 0.328rem;
+}
+.g-menu-inner li i {
+    display: inline-block;
+    width: 0.234rem;
+    height: 0.234rem; 
+    background: url(../img/g-bottom-triangle.png) no-repeat; 
+    background-position: center;
+}
+.g-sort {
+    width: 2.917rem;
+    border-right: 1px solid #eee;
+}
+.g-location {
+    width: 2.197rem;
+    border-right: 1px solid #eee;
+}
+.g-filter {
+    width: 1.477rem;
+}
+.g-list {
+    width: 0.4688rem;
+    height: 1.054rem;
+    background: url(../img/g-list.png) no-repeat;
+    background-position: center;
+    float: right;
+}
+.content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+ul {
+    list-style: none;
+}
+li {
+    width: 100%;
+    max-width: 750px;
+    height: 3.047rem;
+}
+.g-book-img {
+    float: left;
+    width: 2.344rem;
+    height: 2.344rem;
+    line-height: 2.344rem;
+    display: block;
+    margin: 15px 0 15px 15px;
+    text-align: center;
+}
+.g-book-img img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.g-book-item {
+    float: left;
+    width: 4.45rem;
+    height: 3.047rem;
+    font-size: 0.3516rem;
+    border-bottom: 1px solid #eee;
+    padding: 0.3516rem 0.3516rem 0.3516rem 0;
+    margin-left: 0.3516rem;
+}
+.g-book-name {
+    height: 0.9676rem;
+    color: #333;
+    min-height: 0.4688rem;
+    line-height: 0.4688rem;
+    max-height: 0.9676rem;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 0.3516rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 0;
+}
+.g-book-store {
+    color: #999;
+    font-size: 0.3282rem;
+    margin-top: 0.1172rem;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+}
+.g-book-quality {
+    float: left;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    width: 1.172rem!important;
+}
+.g-bookstore {
+    width: 70%;
+    height: 0.4688rem;
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.g-book-p {
+    margin-top: 0.1172rem;
+}
+.g-book-p b {
+    width: 0.3047rem;
+    color: #d00000 !important;
+    font-size: 0.3985rem;
+    margin-top: 0.4688rem;
+    font-weight: 400;
+}
+.g-book-price {
+    min-width: 0.2109rem!important;
+    width: 45%!important;
+    color: #d00000;
+    font-size: 0.4454rem;
+    height: 0.4688rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.g-putaway {
+    float: right!important;
+    width: 1.687rem!important;
+    text-align: right;
+    color: #999999;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    overflow: hidden;
+    font-size: 0.3282rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+}
+.g-page {
+    width: 100%;
+    height: 0.9676rem;
+    line-height: 0.9676rem;
+    color: #333;
+    font-size: 0.3516rem;
+    background: #fff;
+    border-top: 1px solid #eeeeee;
+    overflow: hidden;
+    z-index: 999;
+    margin-top: 0.1875rem;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+.g-page a {
+    display:inline-block;
+    width: 33%;
+    height: 0.9676rem;
+    text-align: center;
+    line-height: 0.9676rem;
+    font-size: 0.3516rem;
+    color: #999;
+}
+.g-show-page {
+    position: absolute;
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.9676rem;
+    height: 0.9676rem;
+    left: 33.3%;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.bold {
+    font-weight: bold;
+}
+.previous {
+    position: absolute;
+    left: 0;
+}
+.next {
+    position: absolute;
+    right: 0;
+}
+.g-footer {
+    margin-top: 0.1875rem;
+    width: 100%;
+}
+.g-footer-last {
+    padding: 0 0.3516rem;
+    border-top: 1px solid #eee;
+    background: #fbfbfb;
+    height: 0.9676rem;
+    line-height: 0.9676rem;
+    color: #666;
+}
+.g-footer-last a {
+    display: block;
+    width: 1.08rem;   
+    height: 0.9676rem;
+    text-align: center;
+    font-size: 0.3516rem;
+    color: #666;
+    float: left;
+}
+.g-footer-last span {
+    display: block;
+    width: 0.4688rem;
+    height: 0.9142rem;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 0.3516rem;
+    float: left;
+}
+.foot-bottom {
+    height: 0.9676rem;
+    line-height: 0.9676rem;
+    background: #fff;
+    border-top: 1px solid #eee;
+    color: #999;
+    text-align: center;
+    font-size: 0.3047rem;
+}
+.g-sort-list {
+    display: none;
+    color: #333;
+    font-size: 0.3516rem;
+}
+.g-sort-list li {
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 0.3rem;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.g-sort-list li a {
+    color: #333;
+    height: 1rem;
+    line-height: 1rem;
+    
+}
+.g-sort-list .check {
+    display: block;
+    width: 0.586rem;
+    height: 0.586rem;
+    margin-top: 0.1406rem;
+    margin-right: 0.1172rem;
+    background: url(../img/g-check.png) no-repeat;
+    float: right;
+}
+.checked {
+    color: #d00000 !important;
+}
+.g-height {
+    width: 100%;
+    height: 8px;
+    background: #f8f8f8;
+    padding: 0 !important;
+}
+.g-location-list {
+    width: 100%;
+    padding: 0 0.3rem;
+    font-size: 0.3516rem;
+    background: #fff;
+    display: none;
+    overflow: hidden;
+}
+.g-tit {
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+.g-location-list li {
+    width: 1.425rem;
+    height: 0.6rem;
+    line-height: 0.6rem;   
+    margin:0 0.3rem 0.3rem 0;
+    background: #f5f5f5;
+    text-align: center;
+    float: left;
+}
+.g-location-check {
+    background: #d00000 !important;
+    color: #fff;
+    border-radius: 3px;
+}
+.g-filter-condition {
+    width: 100%;
+    padding: 0 0.3rem;
+    background: #fff;
+    display: none;
+}
+.g-filter-select {
+    line-height: 1rem;
+    color: #333;
+    font-size: 0.3516rem;
+    border-top: 1px solid #eee;
+    overflow: hidden;
+}
+.g-selected {
+    width: 1.406rem;
+    font-weight: bold;
+    font-size: 0.3516rem;
+    color: #333;
+    margin-right: 0.4688rem;
+    float: left;
+    margin-bottom: 0;
+}
+.g-select {
+    line-height: normal;
+    margin-bottom: 0.85rem;
+}
+.g-sel {
+    display: block;
+    width: 2.98rem;
+    color: #d00000;
+    border: 1px solid #d00000;
+    border-radius: 3px;
+    line-height: 0.586rem;
+    padding: 0 0.08rem;
+    float: left;
+    margin-top: .1875rem;
+}
+.g-sel i {
+    display: inline-block;
+    width: 0.281rem;
+    height: 0.281rem;
+    background: url(../img/g-delete.png) no-repeat;
+    background-size: 100%;
+}
+.g-filtrate {
+    margin-bottom: 0.3rem;
+    font-size: 0.3516rem;
+    color: #999;
+}
+.g-filtrate p , .g-classification {
+    font-weight: bold;
+    font-size: 0.3516rem;
+    color: #333;
+    font-size: 0.3516rem;
+    line-height: 1rem;
+    margin: 0;
+}
+.g-filtrate span {
+    display: inline-block;
+    line-height: 0.679rem;
+}
+.g-filtrate input {
+    width: 1.5rem;
+    height: 0.586rem;
+    line-height: 0.586rem;
+    font-size: 0.3516rem;
+    background: #f5f5f5;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+    color: rgb(51, 51, 51);
+}
+.g-sure {
+    display: inline-block;
+    color: #d00000;
+    border: 1px solid #d00000;
+    border-radius: 3px;
+    width: 1.11rem !important;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+}
+.g-classify {
+    width: 100%;
+    overflow: hidden;
+}
+.g-classify li {
+    text-align: center;
+    width: 1.956rem;
+    height: 1rem;
+    margin-right: 0.5157rem;
+    margin-bottom: 0.1992rem;
+    background: #f5f5f5;
+    float: left;
+}
+.g-classify li .txt1 {
+    width: 100%;
+    height: 0.5157rem;
+    color: #333;
+    line-height: 0.5157rem;
+    margin: 0;
+    font-size: 0.3516rem;
+}
+.g-classify li .txt2 {
+    font-size: 0.3047rem;
+    color: #666;
+    width: 100%;
+    margin: 0;
+}
+.g-list2 {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.g-cont2 {
+    font-size: 0.3516rem;
+    margin-left: 0.3516rem;
+    padding: 0.3516rem 0.3516rem 0.3516rem 0;
+    overflow: hidden;
+}
+.g-book-name1 {
+    color: #333;
+    min-height: 0.4688rem;
+    line-height: 0.4688rem;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 0.3516rem;
+}
+.g-book-store1 , .g-book-p1 {
+    margin-top: 0.1172rem;
+}
+.g-book-quality1 {
+    width: 30%!important;
+    color: #999999;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    overflow: hidden;
+    float: left;
+    font-size: 0.3281rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+}
+.g-bookstore1 {
+    float: right!important;
+    width: 70%!important;
+    text-align: right;
+    color: #999999;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    overflow: hidden;
+    font-size: 0.3281rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+}
+.g-book-p1 b {
+    width: 0.3047rem;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    color: #d00000;
+    font-size: 0.3895rem;
+    float: left;
+}
+.g-book-price1 {
+    min-width: 2.8129rem!important;
+    width: 45%!important;
+    color: #d00000;
+    font-size: 0.4453rem;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    float: left;
+}
+.g-putaway1 {
+    text-align: right;
+    color: #999999;
+    width: 40%;
+    height: 0.4688rem;
+    line-height: 0.4688rem;
+    
+    font-size: 0.3281rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+    float: right;
+}
+.g-show {
+    color:#d00000 !important;
+}
+.g-show-div {
+    display: block !important;
+}
+.g-show-i {
+    background: url(../img/g-top-triangle.png) no-repeat !important;
+    background-position: center !important;
+}
+.g-menu-top {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 1 !important;
+}
+.h-returntop {
+    display: none;
+    width: .92rem;
+    height: .92rem;
+    position: fixed;
+    bottom: 1.2rem;
+    right: .2rem;
+    z-index: 99;
+    background: url(../img/g-top.png) no-repeat;
+    background-size: 100%;
+}
+.g-seach-null {
+    margin-top: 3rem;
+    text-align: center;
+    display: none;
+}
+.search_null_tip1 {
+    font-size: 0.328rem;
+    color: #333;
+    line-height: 1.5rem;
+    padding: 0 15px;
+    word-wrap: break-word;
+}
+.search_null_tip2 {
+    font-size: 0.257rem;
+    color: #6b6b6b;
+    line-height: 1rem;
+}
+.g-right {
+    transform: translate3d(0px, 0px, 0px)!important;
+}
